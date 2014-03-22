@@ -106,6 +106,10 @@
     cell.detailTextLabel.text = skuData.description;
     cell.imageView.image = [imgFetcher fetchImage:skuData.imagePath];
     
+    if(indexPath.row == 2){
+        cell.backgroundColor = [UIColor redColor];
+    }
+    
     //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
