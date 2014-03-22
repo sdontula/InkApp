@@ -275,6 +275,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Staples Inc";
 				TargetAttributes = {
+					95A0F65A18DC730E00DEB0C7 = {
+						DevelopmentTeam = EHR8JT7HU7;
+					};
 					95A0F67E18DC730E00DEB0C7 = {
 						TestTargetID = 95A0F65A18DC730E00DEB0C7;
 					};
@@ -467,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Staples Inventory/Staples Inventory-Prefix.pch";
 				INFOPLIST_FILE = "Staples Inventory/Staples Inventory-Info.plist";
@@ -482,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Staples Inventory/Staples Inventory-Prefix.pch";
 				INFOPLIST_FILE = "Staples Inventory/Staples Inventory-Info.plist";
