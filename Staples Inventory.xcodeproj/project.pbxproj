@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9557169A18DD5B2C00FE61B1 /* splash35@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9557169818DD5B2C00FE61B1 /* splash35@2x.jpg */; };
+		9557169B18DD5B2C00FE61B1 /* splash40@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9557169918DD5B2C00FE61B1 /* splash40@2x.jpg */; };
 		9566CA0218DD3E0F002F3D89 /* SIImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9566CA0118DD3E0F002F3D89 /* SIImageFetcher.m */; };
 		9566CA0518DD5021002F3D89 /* Node3.js in Sources */ = {isa = PBXBuildFile; fileRef = 9566CA0318DD5021002F3D89 /* Node3.js */; };
 		9566CA0618DD5021002F3D89 /* skuList.json in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0418DD5021002F3D89 /* skuList.json */; };
+		9566CA0F18DD5314002F3D89 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0718DD5313002F3D89 /* Icon-40.png */; };
+		9566CA1018DD5314002F3D89 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0818DD5313002F3D89 /* Icon-40@2x.png */; };
+		9566CA1118DD5314002F3D89 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0918DD5313002F3D89 /* Icon-60.png */; };
+		9566CA1218DD5314002F3D89 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0A18DD5313002F3D89 /* Icon-60@2x.png */; };
+		9566CA1318DD5314002F3D89 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0B18DD5313002F3D89 /* Icon-76.png */; };
+		9566CA1418DD5314002F3D89 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0C18DD5314002F3D89 /* Icon-76@2x.png */; };
+		9566CA1518DD5314002F3D89 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0D18DD5314002F3D89 /* Icon-Small.png */; };
+		9566CA1618DD5314002F3D89 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0E18DD5314002F3D89 /* Icon-Small@2x.png */; };
 		95A0F65F18DC730E00DEB0C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A0F65E18DC730E00DEB0C7 /* Foundation.framework */; };
 		95A0F66118DC730E00DEB0C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A0F66018DC730E00DEB0C7 /* CoreGraphics.framework */; };
 		95A0F66318DC730E00DEB0C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A0F66218DC730E00DEB0C7 /* UIKit.framework */; };
@@ -39,10 +49,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9557169818DD5B2C00FE61B1 /* splash35@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "splash35@2x.jpg"; sourceTree = "<group>"; };
+		9557169918DD5B2C00FE61B1 /* splash40@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "splash40@2x.jpg"; sourceTree = "<group>"; };
 		9566CA0018DD3E0F002F3D89 /* SIImageFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIImageFetcher.h; sourceTree = "<group>"; };
 		9566CA0118DD3E0F002F3D89 /* SIImageFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIImageFetcher.m; sourceTree = "<group>"; };
 		9566CA0318DD5021002F3D89 /* Node3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Node3.js; sourceTree = "<group>"; };
 		9566CA0418DD5021002F3D89 /* skuList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = skuList.json; sourceTree = "<group>"; };
+		9566CA0718DD5313002F3D89 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		9566CA0818DD5313002F3D89 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		9566CA0918DD5313002F3D89 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		9566CA0A18DD5313002F3D89 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		9566CA0B18DD5313002F3D89 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		9566CA0C18DD5314002F3D89 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		9566CA0D18DD5314002F3D89 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		9566CA0E18DD5314002F3D89 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		95A0F65B18DC730E00DEB0C7 /* Staples Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Staples Inventory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A0F65E18DC730E00DEB0C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95A0F66018DC730E00DEB0C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,6 +112,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9566CA1718DD531C002F3D89 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				9566CA0718DD5313002F3D89 /* Icon-40.png */,
+				9557169818DD5B2C00FE61B1 /* splash35@2x.jpg */,
+				9557169918DD5B2C00FE61B1 /* splash40@2x.jpg */,
+				9566CA0818DD5313002F3D89 /* Icon-40@2x.png */,
+				9566CA0918DD5313002F3D89 /* Icon-60.png */,
+				9566CA0A18DD5313002F3D89 /* Icon-60@2x.png */,
+				9566CA0B18DD5313002F3D89 /* Icon-76.png */,
+				9566CA0C18DD5314002F3D89 /* Icon-76@2x.png */,
+				9566CA0D18DD5314002F3D89 /* Icon-Small.png */,
+				9566CA0E18DD5314002F3D89 /* Icon-Small@2x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		95A0F65218DC730E00DEB0C7 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +173,7 @@
 		95A0F66518DC730E00DEB0C7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9566CA1718DD531C002F3D89 /* Icons */,
 				9566CA0318DD5021002F3D89 /* Node3.js */,
 				9566CA0418DD5021002F3D89 /* skuList.json */,
 				95A0F66618DC730E00DEB0C7 /* Staples Inventory-Info.plist */,
@@ -267,9 +305,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				95A0F67A18DC730E00DEB0C7 /* Images.xcassets in Resources */,
+				9566CA1518DD5314002F3D89 /* Icon-Small.png in Resources */,
 				95A0F66918DC730E00DEB0C7 /* InfoPlist.strings in Resources */,
 				95A0F67218DC730E00DEB0C7 /* Main.storyboard in Resources */,
+				9566CA1018DD5314002F3D89 /* Icon-40@2x.png in Resources */,
 				9566CA0618DD5021002F3D89 /* skuList.json in Resources */,
+				9566CA1118DD5314002F3D89 /* Icon-60.png in Resources */,
+				9557169B18DD5B2C00FE61B1 /* splash40@2x.jpg in Resources */,
+				9566CA0F18DD5314002F3D89 /* Icon-40.png in Resources */,
+				9557169A18DD5B2C00FE61B1 /* splash35@2x.jpg in Resources */,
+				9566CA1218DD5314002F3D89 /* Icon-60@2x.png in Resources */,
+				9566CA1618DD5314002F3D89 /* Icon-Small@2x.png in Resources */,
+				9566CA1418DD5314002F3D89 /* Icon-76@2x.png in Resources */,
+				9566CA1318DD5314002F3D89 /* Icon-76.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +470,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Staples Inventory/Staples Inventory-Prefix.pch";
 				INFOPLIST_FILE = "Staples Inventory/Staples Inventory-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -435,7 +485,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Staples Inventory/Staples Inventory-Prefix.pch";
 				INFOPLIST_FILE = "Staples Inventory/Staples Inventory-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

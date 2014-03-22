@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4C52529A-7DEF-4E04-8839-C40C814604DF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Staples Inventory</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>33B0788B-45AD-45F9-937E-EF834BE83E05</key>
+		<string>https://github.com/sdontula/InkApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Staples Inventory.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>33B0788B-45AD-45F9-937E-EF834BE83E05</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sdontula/InkApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>33B0788B-45AD-45F9-937E-EF834BE83E05</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>33B0788B-45AD-45F9-937E-EF834BE83E05</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Staples Inventory</string>
+		</dict>
+	</array>
+</dict>
+</plist>
