@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9566CA0218DD3E0F002F3D89 /* SIImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9566CA0118DD3E0F002F3D89 /* SIImageFetcher.m */; };
+		9566CA0518DD5021002F3D89 /* Node3.js in Sources */ = {isa = PBXBuildFile; fileRef = 9566CA0318DD5021002F3D89 /* Node3.js */; };
+		9566CA0618DD5021002F3D89 /* skuList.json in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0418DD5021002F3D89 /* skuList.json */; };
 		95A0F65F18DC730E00DEB0C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A0F65E18DC730E00DEB0C7 /* Foundation.framework */; };
 		95A0F66118DC730E00DEB0C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A0F66018DC730E00DEB0C7 /* CoreGraphics.framework */; };
 		95A0F66318DC730E00DEB0C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A0F66218DC730E00DEB0C7 /* UIKit.framework */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		9566CA0018DD3E0F002F3D89 /* SIImageFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIImageFetcher.h; sourceTree = "<group>"; };
 		9566CA0118DD3E0F002F3D89 /* SIImageFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIImageFetcher.m; sourceTree = "<group>"; };
+		9566CA0318DD5021002F3D89 /* Node3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Node3.js; sourceTree = "<group>"; };
+		9566CA0418DD5021002F3D89 /* skuList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = skuList.json; sourceTree = "<group>"; };
 		95A0F65B18DC730E00DEB0C7 /* Staples Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Staples Inventory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A0F65E18DC730E00DEB0C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95A0F66018DC730E00DEB0C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +136,8 @@
 		95A0F66518DC730E00DEB0C7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9566CA0318DD5021002F3D89 /* Node3.js */,
+				9566CA0418DD5021002F3D89 /* skuList.json */,
 				95A0F66618DC730E00DEB0C7 /* Staples Inventory-Info.plist */,
 				95A0F66718DC730E00DEB0C7 /* InfoPlist.strings */,
 				95A0F66A18DC730E00DEB0C7 /* main.m */,
@@ -263,6 +269,7 @@
 				95A0F67A18DC730E00DEB0C7 /* Images.xcassets in Resources */,
 				95A0F66918DC730E00DEB0C7 /* InfoPlist.strings in Resources */,
 				95A0F67218DC730E00DEB0C7 /* Main.storyboard in Resources */,
+				9566CA0618DD5021002F3D89 /* skuList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +294,7 @@
 				95A0F66F18DC730E00DEB0C7 /* SIAppDelegate.m in Sources */,
 				95A0F69A18DCB14400DEB0C7 /* SISkuData.m in Sources */,
 				95A0F66B18DC730E00DEB0C7 /* main.m in Sources */,
+				9566CA0518DD5021002F3D89 /* Node3.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
