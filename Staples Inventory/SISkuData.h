@@ -14,8 +14,9 @@
 @property (strong) NSString *description;
 @property (strong) NSString *capacity;
 @property (strong) NSString *threshold;
+@property (strong) NSString *currentLevel;
 @property (strong) NSString *imagePath;
 
-- (id)initWithDesc:(NSString*)sku description:(NSString*)description capacity:(NSString*)capacity threshold:(NSString*)threshold imagePath:(NSString*)imagePath;
+- (id)initWithDesc:(NSString*)sku description:(NSString*)description capacity:(NSString*)capacity threshold:(NSString*)threshold currentLevel:(NSString*)currentLevel imagePath:(NSString*)imagePath;
 
 @end

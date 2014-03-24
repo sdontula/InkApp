@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *skuIdLabel;
 @property (weak, nonatomic) IBOutlet UILabel *skuDetailLabel;
 @property (weak, nonatomic) IBOutlet UILabel *skuCapacityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *skuCurrentLevel;
 @property (weak, nonatomic) IBOutlet UILabel *skuThresholdLabel;
 
 @property (weak, nonatomic) IBOutlet UIImageView *skuImageView;

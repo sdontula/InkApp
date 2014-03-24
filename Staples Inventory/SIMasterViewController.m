@@ -12,8 +12,8 @@
 #import "SISkuData.h"
 #import "SIImageFetcher.h"
 
-//#define dataURL @"http://127.0.0.1:8082/skuList"
-#define dataURL @"https://raw.githubusercontent.com/sdontula/InkApp/master/Staples%20Inventory/skuList.json"
+#define dataURL @"http://127.0.0.1:8082/skuList"
+//#define dataURL @"https://raw.githubusercontent.com/sdontula/InkApp/master/Staples%20Inventory/skuList.json"
 
 
 @interface SIMasterViewController () {
@@ -55,8 +55,9 @@
         NSString *description = [[_objects objectAtIndex:i] objectForKey:@"description"];
         NSString *capacity = [[_objects objectAtIndex:i] objectForKey:@"capacity"];
         NSString *threshold = [[_objects objectAtIndex:i] objectForKey:@"threshold"];
+        NSString *currentLevel = [[_objects objectAtIndex:i] objectForKey:@"currentLevel"];
         NSString *imagePath = [[_objects objectAtIndex:i] objectForKey:@"imageUrl"];
-        [_skus addObject:[[SISkuData alloc]initWithDesc:sku description:description capacity:capacity threshold:threshold imagePath:imagePath]];
+        [_skus addObject:[[SISkuData alloc]initWithDesc:sku description:description capacity:capacity threshold:threshold currentLevel:currentLevel imagePath:imagePath]];
     }
     [[self tableView]reloadData];
 }
@@ -106,7 +107,11 @@
     cell.detailTextLabel.text = skuData.description;
     cell.imageView.image = [imgFetcher fetchImage:skuData.imagePath];
     
-    if(indexPath.row == 2){
+    NSNumber  *currentNum = [NSNumber numberWithInteger: [skuData.currentLevel integerValue]];
+    NSNumber  *thresholdNum = [NSNumber numberWithInteger: [skuData.threshold integerValue]];
+    
+    //if(indexPath.row == 2){
+    if([currentNum intValue] < [thresholdNum intValue]){
         cell.backgroundColor = [UIColor redColor];
     }
     

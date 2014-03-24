@@ -10,7 +10,7 @@
 		9557169A18DD5B2C00FE61B1 /* splash35@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9557169818DD5B2C00FE61B1 /* splash35@2x.jpg */; };
 		9557169B18DD5B2C00FE61B1 /* splash40@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9557169918DD5B2C00FE61B1 /* splash40@2x.jpg */; };
 		9566CA0218DD3E0F002F3D89 /* SIImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9566CA0118DD3E0F002F3D89 /* SIImageFetcher.m */; };
-		9566CA0518DD5021002F3D89 /* Node3.js in Sources */ = {isa = PBXBuildFile; fileRef = 9566CA0318DD5021002F3D89 /* Node3.js */; };
+		9566CA0518DD5021002F3D89 /* Node3.js.txt in Sources */ = {isa = PBXBuildFile; fileRef = 9566CA0318DD5021002F3D89 /* Node3.js.txt */; };
 		9566CA0618DD5021002F3D89 /* skuList.json in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0418DD5021002F3D89 /* skuList.json */; };
 		9566CA0F18DD5314002F3D89 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0718DD5313002F3D89 /* Icon-40.png */; };
 		9566CA1018DD5314002F3D89 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0818DD5313002F3D89 /* Icon-40@2x.png */; };
@@ -20,6 +20,7 @@
 		9566CA1418DD5314002F3D89 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0C18DD5314002F3D89 /* Icon-76@2x.png */; };
 		9566CA1518DD5314002F3D89 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0D18DD5314002F3D89 /* Icon-Small.png */; };
 		9566CA1618DD5314002F3D89 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0E18DD5314002F3D89 /* Icon-Small@2x.png */; };
+		958B3DED18DFEEF50032468E /* SkuListNode.js.txt in Sources */ = {isa = PBXBuildFile; fileRef = 958B3DEC18DFEEF50032468E /* SkuListNode.js.txt */; };
 		95A0F65F18DC730E00DEB0C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A0F65E18DC730E00DEB0C7 /* Foundation.framework */; };
 		95A0F66118DC730E00DEB0C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A0F66018DC730E00DEB0C7 /* CoreGraphics.framework */; };
 		95A0F66318DC730E00DEB0C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A0F66218DC730E00DEB0C7 /* UIKit.framework */; };
@@ -36,6 +37,7 @@
 		95A0F68B18DC730E00DEB0C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95A0F68918DC730E00DEB0C7 /* InfoPlist.strings */; };
 		95A0F68D18DC730E00DEB0C7 /* Staples_InventoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A0F68C18DC730E00DEB0C7 /* Staples_InventoryTests.m */; };
 		95A0F69A18DCB14400DEB0C7 /* SISkuData.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A0F69918DCB14400DEB0C7 /* SISkuData.m */; };
+		95F6FB3D18DE7BAF00213163 /* mongodb.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95F6FB3C18DE7BAF00213163 /* mongodb.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,7 @@
 		9557169918DD5B2C00FE61B1 /* splash40@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "splash40@2x.jpg"; sourceTree = "<group>"; };
 		9566CA0018DD3E0F002F3D89 /* SIImageFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIImageFetcher.h; sourceTree = "<group>"; };
 		9566CA0118DD3E0F002F3D89 /* SIImageFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIImageFetcher.m; sourceTree = "<group>"; };
-		9566CA0318DD5021002F3D89 /* Node3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Node3.js; sourceTree = "<group>"; };
+		9566CA0318DD5021002F3D89 /* Node3.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Node3.js.txt; sourceTree = "<group>"; };
 		9566CA0418DD5021002F3D89 /* skuList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = skuList.json; sourceTree = "<group>"; };
 		9566CA0718DD5313002F3D89 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
 		9566CA0818DD5313002F3D89 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		9566CA0C18DD5314002F3D89 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		9566CA0D18DD5314002F3D89 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		9566CA0E18DD5314002F3D89 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		958B3DEC18DFEEF50032468E /* SkuListNode.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkuListNode.js.txt; sourceTree = "<group>"; };
 		95A0F65B18DC730E00DEB0C7 /* Staples Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Staples Inventory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A0F65E18DC730E00DEB0C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95A0F66018DC730E00DEB0C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +89,7 @@
 		95A0F68C18DC730E00DEB0C7 /* Staples_InventoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Staples_InventoryTests.m; sourceTree = "<group>"; };
 		95A0F69818DCB14400DEB0C7 /* SISkuData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SISkuData.h; sourceTree = "<group>"; };
 		95A0F69918DCB14400DEB0C7 /* SISkuData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SISkuData.m; sourceTree = "<group>"; };
+		95F6FB3C18DE7BAF00213163 /* mongodb.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mongodb.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,12 +178,14 @@
 			isa = PBXGroup;
 			children = (
 				9566CA1718DD531C002F3D89 /* Icons */,
-				9566CA0318DD5021002F3D89 /* Node3.js */,
+				9566CA0318DD5021002F3D89 /* Node3.js.txt */,
 				9566CA0418DD5021002F3D89 /* skuList.json */,
 				95A0F66618DC730E00DEB0C7 /* Staples Inventory-Info.plist */,
 				95A0F66718DC730E00DEB0C7 /* InfoPlist.strings */,
 				95A0F66A18DC730E00DEB0C7 /* main.m */,
 				95A0F66C18DC730E00DEB0C7 /* Staples Inventory-Prefix.pch */,
+				95F6FB3C18DE7BAF00213163 /* mongodb.txt */,
+				958B3DEC18DFEEF50032468E /* SkuListNode.js.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 				95A0F67A18DC730E00DEB0C7 /* Images.xcassets in Resources */,
 				9566CA1518DD5314002F3D89 /* Icon-Small.png in Resources */,
 				95A0F66918DC730E00DEB0C7 /* InfoPlist.strings in Resources */,
+				95F6FB3D18DE7BAF00213163 /* mongodb.txt in Resources */,
 				95A0F67218DC730E00DEB0C7 /* Main.storyboard in Resources */,
 				9566CA1018DD5314002F3D89 /* Icon-40@2x.png in Resources */,
 				9566CA0618DD5021002F3D89 /* skuList.json in Resources */,
@@ -345,7 +352,8 @@
 				95A0F66F18DC730E00DEB0C7 /* SIAppDelegate.m in Sources */,
 				95A0F69A18DCB14400DEB0C7 /* SISkuData.m in Sources */,
 				95A0F66B18DC730E00DEB0C7 /* main.m in Sources */,
-				9566CA0518DD5021002F3D89 /* Node3.js in Sources */,
+				958B3DED18DFEEF50032468E /* SkuListNode.js.txt in Sources */,
+				9566CA0518DD5021002F3D89 /* Node3.js.txt in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

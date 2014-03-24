@@ -18,7 +18,7 @@
 
 @implementation SIDetailViewController
 
-@synthesize skuIdLabel, skuDetailLabel, skuCapacityLabel, skuThresholdLabel, skuImageView, currentSku;
+@synthesize skuIdLabel, skuDetailLabel, skuCapacityLabel, skuThresholdLabel, skuCurrentLevel , skuImageView, currentSku;
 
 #pragma mark - Managing the detail item
 
@@ -49,7 +49,16 @@
     skuDetailLabel.text = currentSku.description;
     skuCapacityLabel.text = currentSku.capacity;
     skuThresholdLabel.text = currentSku.threshold;
+    skuCurrentLevel.text = currentSku.currentLevel;
     skuImageView.image = [imgFetcher fetchImage:currentSku.imagePath];
+    
+    NSNumber  *currentNum = [NSNumber numberWithInteger: [currentSku.currentLevel integerValue]];
+    NSNumber  *thresholdNum = [NSNumber numberWithInteger: [currentSku.threshold integerValue]];
+    
+    //if(indexPath.row == 2){
+    if([currentNum intValue] < [thresholdNum intValue]){
+        skuCurrentLevel.backgroundColor = [UIColor redColor];
+    }
 }
 
 - (void)viewDidLoad
