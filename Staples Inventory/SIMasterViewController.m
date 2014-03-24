@@ -12,8 +12,8 @@
 #import "SISkuData.h"
 #import "SIImageFetcher.h"
 
-#define dataURL @"http://127.0.0.1:8082/skuList"
-//#define dataURL @"https://raw.githubusercontent.com/sdontula/InkApp/master/Staples%20Inventory/skuList.json"
+//#define dataURL @"http://127.0.0.1:8082/skuList"
+#define dataURL @"https://raw.githubusercontent.com/sdontula/InkApp/master/Staples%20Inventory/skuList.json"
 
 
 @interface SIMasterViewController () {
