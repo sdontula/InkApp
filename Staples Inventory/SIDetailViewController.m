@@ -56,7 +56,8 @@
     NSNumber  *thresholdNum = [NSNumber numberWithInteger: [currentSku.threshold integerValue]];
     
     //if(indexPath.row == 2){
-    if([currentNum intValue] < [thresholdNum intValue]){
+    bool flag = [currentNum intValue] < [thresholdNum intValue];
+    if(flag){
         skuCurrentLevel.backgroundColor = [UIColor redColor];
     }
 }

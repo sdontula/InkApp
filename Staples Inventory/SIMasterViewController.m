@@ -11,10 +11,14 @@
 #import "SIDetailViewController.h"
 #import "SISkuData.h"
 #import "SIImageFetcher.h"
+#import "AFNetworking.h"
 
 //#define dataURL @"http://127.0.0.1:8082/skuList"
-#define dataURL @"https://raw.githubusercontent.com/sdontula/InkApp/master/Staples%20Inventory/skuList.json"
+#define dataURL @"https://raw.githubusercontent.com/sdontula/InkApp/master/Staples%20Inventory/skuListFull.json"
 
+static NSString * const BaseApiURLString = @"http://api.staples.com/v1/10001/product/partnumber/skunumber?locale=en_US&catalogId=10051&zipCode=02421&client_id=JxP9wlnIfCSeGc9ifRAAGku7F4FSdErd";
+
+static int counter = 0;
 
 @interface SIMasterViewController () {
     NSMutableArray *_objects;
@@ -46,6 +50,13 @@
 
 
 - (void)retreiveData{
+    counter = 0;
+    [self getInventorySkuData];
+    //[self getSkuImageURLs];
+    [[self tableView]reloadData];
+}
+
+- (void)getInventorySkuData{
     NSURL * url = [NSURL URLWithString:dataURL];
     NSData * data = [NSData dataWithContentsOfURL:url];
     _objects = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
@@ -57,9 +68,41 @@
         NSString *threshold = [[_objects objectAtIndex:i] objectForKey:@"threshold"];
         NSString *currentLevel = [[_objects objectAtIndex:i] objectForKey:@"currentLevel"];
         NSString *imagePath = [[_objects objectAtIndex:i] objectForKey:@"imageUrl"];
-        [_skus addObject:[[SISkuData alloc]initWithDesc:sku description:description capacity:capacity threshold:threshold currentLevel:currentLevel imagePath:imagePath]];
+        //NSLog(@"%@",imagePath);
+        //NSString *imagePath = @"";
+        //if([sku isEqualToString:@"325905"]){
+            [_skus addObject:[[SISkuData alloc]initWithDesc:sku description:description capacity:capacity threshold:threshold currentLevel:currentLevel imagePath:imagePath]];
+        //}
     }
-    [[self tableView]reloadData];
+}
+
+- (void) getSkuImageURLs{
+    for (int i=0; i<_skus.count; i++) {
+        //NSString *currentSku = [_skus[i] sku];
+        [self getSkuThumbnailUrl:_skus[i]];
+    }
+}
+
+- (void) getSkuThumbnailUrl:(SISkuData *) sku{
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:[BaseApiURLString stringByReplacingOccurrencesOfString:@"skunumber" withString:sku.sku] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        //NSLog(@"JSON: %@", responseObject);
+        NSArray *productArray = [responseObject valueForKey:@"Product"];
+        NSArray *thumbArray = [[[productArray valueForKey:@"thumbnailImage"] valueForKey:@"url"] lastObject];
+        [sku setImagePath:[thumbArray lastObject]];
+        NSLog(@"%@",[sku imagePath]);
+        [self checkCounter];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+        [self checkCounter];
+    }];
+}
+
+- (void) checkCounter{
+    counter++;
+    if(counter==(int)_skus.count){
+        [[self tableView]reloadData];
+    }
 }
 
 -(IBAction)doRefresh:(UIRefreshControl *)sender{
@@ -107,12 +150,16 @@
     cell.detailTextLabel.text = skuData.description;
     cell.imageView.image = [imgFetcher fetchImage:skuData.imagePath];
     
+    //NSLog(@"%@",skuData.imagePath);
+    
     NSNumber  *currentNum = [NSNumber numberWithInteger: [skuData.currentLevel integerValue]];
     NSNumber  *thresholdNum = [NSNumber numberWithInteger: [skuData.threshold integerValue]];
     
-    //if(indexPath.row == 2){
-    if([currentNum intValue] < [thresholdNum intValue]){
+    bool flag = [currentNum intValue] < [thresholdNum intValue];
+    if(flag){
         cell.backgroundColor = [UIColor redColor];
+    }else{
+        cell.backgroundColor = [UIColor whiteColor];
     }
     
     //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
