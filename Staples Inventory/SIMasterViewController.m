@@ -19,6 +19,7 @@
 static NSString * const BaseApiURLString = @"http://api.staples.com/v1/10001/product/partnumber/skunumber?locale=en_US&catalogId=10051&zipCode=02421&client_id=JxP9wlnIfCSeGc9ifRAAGku7F4FSdErd";
 
 static int counter = 0;
+static bool showAlert = false;
 
 @interface SIMasterViewController () {
     NSMutableArray *_objects;
@@ -108,6 +109,21 @@ static int counter = 0;
 -(IBAction)doRefresh:(UIRefreshControl *)sender{
     [self retreiveData];
     [sender endRefreshing];
+    [self shouldIShowAlert];
+    if(showAlert){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle: @"Re-Stock Alert" message: @"Found some ink skus which need to be re-stocked" delegate: nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
+}
+
+- (void) shouldIShowAlert{
+    showAlert = false;
+    for (SISkuData *skuData in _skus){
+        NSNumber  *currentNum = [NSNumber numberWithInteger: [skuData.currentLevel integerValue]];
+        NSNumber  *thresholdNum = [NSNumber numberWithInteger: [skuData.threshold integerValue]];
+        showAlert = [currentNum intValue] < [thresholdNum intValue];
+        if(showAlert) break;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -158,6 +174,7 @@ static int counter = 0;
     bool flag = [currentNum intValue] < [thresholdNum intValue];
     if(flag){
         cell.backgroundColor = [UIColor redColor];
+        showAlert = true;
     }else{
         cell.backgroundColor = [UIColor whiteColor];
     }
