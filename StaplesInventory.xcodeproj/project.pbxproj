@@ -70,14 +70,14 @@
 		9566CA0D18DD5314002F3D89 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		9566CA0E18DD5314002F3D89 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		958B3DEC18DFEEF50032468E /* SkuListNode.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkuListNode.js.txt; sourceTree = "<group>"; };
-		95A0F65B18DC730E00DEB0C7 /* Staples Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Staples Inventory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95A0F65B18DC730E00DEB0C7 /* StaplesInventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaplesInventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A0F65E18DC730E00DEB0C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95A0F66018DC730E00DEB0C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		95A0F66218DC730E00DEB0C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		95A0F66618DC730E00DEB0C7 /* Staples Inventory-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Staples Inventory-Info.plist"; sourceTree = "<group>"; };
+		95A0F66618DC730E00DEB0C7 /* StaplesInventory-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StaplesInventory-Info.plist"; sourceTree = "<group>"; };
 		95A0F66818DC730E00DEB0C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95A0F66A18DC730E00DEB0C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		95A0F66C18DC730E00DEB0C7 /* Staples Inventory-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Staples Inventory-Prefix.pch"; sourceTree = "<group>"; };
+		95A0F66C18DC730E00DEB0C7 /* StaplesInventory-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaplesInventory-Prefix.pch"; sourceTree = "<group>"; };
 		95A0F66D18DC730E00DEB0C7 /* SIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIAppDelegate.h; sourceTree = "<group>"; };
 		95A0F66E18DC730E00DEB0C7 /* SIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIAppDelegate.m; sourceTree = "<group>"; };
 		95A0F67118DC730E00DEB0C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,9 +86,9 @@
 		95A0F67618DC730E00DEB0C7 /* SIDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIDetailViewController.h; sourceTree = "<group>"; };
 		95A0F67718DC730E00DEB0C7 /* SIDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIDetailViewController.m; sourceTree = "<group>"; };
 		95A0F67918DC730E00DEB0C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		95A0F67F18DC730E00DEB0C7 /* Staples InventoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Staples InventoryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95A0F67F18DC730E00DEB0C7 /* StaplesInventoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaplesInventoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A0F68018DC730E00DEB0C7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		95A0F68818DC730E00DEB0C7 /* Staples InventoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Staples InventoryTests-Info.plist"; sourceTree = "<group>"; };
+		95A0F68818DC730E00DEB0C7 /* StaplesInventoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StaplesInventoryTests-Info.plist"; sourceTree = "<group>"; };
 		95A0F68A18DC730E00DEB0C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95A0F68C18DC730E00DEB0C7 /* Staples_InventoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Staples_InventoryTests.m; sourceTree = "<group>"; };
 		95A0F69818DCB14400DEB0C7 /* SISkuData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SISkuData.h; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 		95A0F65218DC730E00DEB0C7 = {
 			isa = PBXGroup;
 			children = (
-				95A0F66418DC730E00DEB0C7 /* Staples Inventory */,
+				95A0F66418DC730E00DEB0C7 /* StaplesInventory */,
 				95A0F68618DC730E00DEB0C7 /* Staples InventoryTests */,
 				95A0F65D18DC730E00DEB0C7 /* Frameworks */,
 				95A0F65C18DC730E00DEB0C7 /* Products */,
@@ -153,8 +153,8 @@
 		95A0F65C18DC730E00DEB0C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95A0F65B18DC730E00DEB0C7 /* Staples Inventory.app */,
-				95A0F67F18DC730E00DEB0C7 /* Staples InventoryTests.xctest */,
+				95A0F65B18DC730E00DEB0C7 /* StaplesInventory.app */,
+				95A0F67F18DC730E00DEB0C7 /* StaplesInventoryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		95A0F66418DC730E00DEB0C7 /* Staples Inventory */ = {
+		95A0F66418DC730E00DEB0C7 /* StaplesInventory */ = {
 			isa = PBXGroup;
 			children = (
 				95A0F69718DCB0D900DEB0C7 /* Model */,
@@ -179,6 +179,7 @@
 				95A0F67918DC730E00DEB0C7 /* Images.xcassets */,
 				95A0F66518DC730E00DEB0C7 /* Supporting Files */,
 			);
+			name = StaplesInventory;
 			path = "Staples Inventory";
 			sourceTree = "<group>";
 		};
@@ -188,10 +189,10 @@
 				9566CA1718DD531C002F3D89 /* Icons */,
 				9566CA0318DD5021002F3D89 /* Node3.js.txt */,
 				9566CA0418DD5021002F3D89 /* skuList.json */,
-				95A0F66618DC730E00DEB0C7 /* Staples Inventory-Info.plist */,
+				95A0F66618DC730E00DEB0C7 /* StaplesInventory-Info.plist */,
 				95A0F66718DC730E00DEB0C7 /* InfoPlist.strings */,
 				95A0F66A18DC730E00DEB0C7 /* main.m */,
-				95A0F66C18DC730E00DEB0C7 /* Staples Inventory-Prefix.pch */,
+				95A0F66C18DC730E00DEB0C7 /* StaplesInventory-Prefix.pch */,
 				95F6FB3C18DE7BAF00213163 /* mongodb.txt */,
 				958B3DEC18DFEEF50032468E /* SkuListNode.js.txt */,
 				95A1AF6E18F3AAA700579B1F /* skuListFull.json */,
@@ -211,7 +212,7 @@
 		95A0F68718DC730E00DEB0C7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				95A0F68818DC730E00DEB0C7 /* Staples InventoryTests-Info.plist */,
+				95A0F68818DC730E00DEB0C7 /* StaplesInventoryTests-Info.plist */,
 				95A0F68918DC730E00DEB0C7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -245,9 +246,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		95A0F65A18DC730E00DEB0C7 /* Staples Inventory */ = {
+		95A0F65A18DC730E00DEB0C7 /* StaplesInventory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95A0F69018DC730E00DEB0C7 /* Build configuration list for PBXNativeTarget "Staples Inventory" */;
+			buildConfigurationList = 95A0F69018DC730E00DEB0C7 /* Build configuration list for PBXNativeTarget "StaplesInventory" */;
 			buildPhases = (
 				47DF90E427364051A9C323E8 /* Check Pods Manifest.lock */,
 				95A0F65718DC730E00DEB0C7 /* Sources */,
@@ -259,14 +260,14 @@
 			);
 			dependencies = (
 			);
-			name = "Staples Inventory";
+			name = StaplesInventory;
 			productName = "Staples Inventory";
-			productReference = 95A0F65B18DC730E00DEB0C7 /* Staples Inventory.app */;
+			productReference = 95A0F65B18DC730E00DEB0C7 /* StaplesInventory.app */;
 			productType = "com.apple.product-type.application";
 		};
-		95A0F67E18DC730E00DEB0C7 /* Staples InventoryTests */ = {
+		95A0F67E18DC730E00DEB0C7 /* StaplesInventoryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95A0F69318DC730E00DEB0C7 /* Build configuration list for PBXNativeTarget "Staples InventoryTests" */;
+			buildConfigurationList = 95A0F69318DC730E00DEB0C7 /* Build configuration list for PBXNativeTarget "StaplesInventoryTests" */;
 			buildPhases = (
 				95A0F67B18DC730E00DEB0C7 /* Sources */,
 				95A0F67C18DC730E00DEB0C7 /* Frameworks */,
@@ -277,9 +278,9 @@
 			dependencies = (
 				95A0F68518DC730E00DEB0C7 /* PBXTargetDependency */,
 			);
-			name = "Staples InventoryTests";
+			name = StaplesInventoryTests;
 			productName = "Staples InventoryTests";
-			productReference = 95A0F67F18DC730E00DEB0C7 /* Staples InventoryTests.xctest */;
+			productReference = 95A0F67F18DC730E00DEB0C7 /* StaplesInventoryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -293,14 +294,14 @@
 				ORGANIZATIONNAME = "Staples Inc";
 				TargetAttributes = {
 					95A0F65A18DC730E00DEB0C7 = {
-						DevelopmentTeam = EHR8JT7HU7;
+						DevelopmentTeam = 5U6L4GNV9C;
 					};
 					95A0F67E18DC730E00DEB0C7 = {
 						TestTargetID = 95A0F65A18DC730E00DEB0C7;
 					};
 				};
 			};
-			buildConfigurationList = 95A0F65618DC730E00DEB0C7 /* Build configuration list for PBXProject "Staples Inventory" */;
+			buildConfigurationList = 95A0F65618DC730E00DEB0C7 /* Build configuration list for PBXProject "StaplesInventory" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -313,8 +314,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95A0F65A18DC730E00DEB0C7 /* Staples Inventory */,
-				95A0F67E18DC730E00DEB0C7 /* Staples InventoryTests */,
+				95A0F65A18DC730E00DEB0C7 /* StaplesInventory */,
+				95A0F67E18DC730E00DEB0C7 /* StaplesInventoryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -415,7 +416,7 @@
 /* Begin PBXTargetDependency section */
 		95A0F68518DC730E00DEB0C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 95A0F65A18DC730E00DEB0C7 /* Staples Inventory */;
+			target = 95A0F65A18DC730E00DEB0C7 /* StaplesInventory */;
 			targetProxy = 95A0F68418DC730E00DEB0C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,7 +481,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -512,7 +513,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -526,10 +527,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Staples Inventory/Staples Inventory-Prefix.pch";
-				INFOPLIST_FILE = "Staples Inventory/Staples Inventory-Info.plist";
+				GCC_PREFIX_HEADER = "Staples Inventory/StaplesInventory-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Staples Inventory/StaplesInventory-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = StaplesInventory;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -543,10 +544,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Staples Inventory/Staples Inventory-Prefix.pch";
-				INFOPLIST_FILE = "Staples Inventory/Staples Inventory-Info.plist";
+				GCC_PREFIX_HEADER = "Staples Inventory/StaplesInventory-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Staples Inventory/StaplesInventory-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = StaplesInventory;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -567,8 +568,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Staples InventoryTests/Staples InventoryTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Staples InventoryTests/StaplesInventoryTests-Info.plist";
+				PRODUCT_NAME = StaplesInventoryTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -585,8 +586,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Staples Inventory/Staples Inventory-Prefix.pch";
-				INFOPLIST_FILE = "Staples InventoryTests/Staples InventoryTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Staples InventoryTests/StaplesInventoryTests-Info.plist";
+				PRODUCT_NAME = StaplesInventoryTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -595,7 +596,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95A0F65618DC730E00DEB0C7 /* Build configuration list for PBXProject "Staples Inventory" */ = {
+		95A0F65618DC730E00DEB0C7 /* Build configuration list for PBXProject "StaplesInventory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95A0F68E18DC730E00DEB0C7 /* Debug */,
@@ -604,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95A0F69018DC730E00DEB0C7 /* Build configuration list for PBXNativeTarget "Staples Inventory" */ = {
+		95A0F69018DC730E00DEB0C7 /* Build configuration list for PBXNativeTarget "StaplesInventory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95A0F69118DC730E00DEB0C7 /* Debug */,
@@ -613,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95A0F69318DC730E00DEB0C7 /* Build configuration list for PBXNativeTarget "Staples InventoryTests" */ = {
+		95A0F69318DC730E00DEB0C7 /* Build configuration list for PBXNativeTarget "StaplesInventoryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95A0F69418DC730E00DEB0C7 /* Debug */,
