@@ -11,6 +11,7 @@
 @interface SIMasterViewController : UITableViewController
 
 @property (strong) NSMutableArray *skus;
+@property (weak,nonatomic) NSString *dataURL;
 
 - (void)retreiveData;
 -(IBAction)doRefresh:(UIRefreshControl *)sender;

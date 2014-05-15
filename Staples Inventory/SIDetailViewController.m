@@ -32,6 +32,7 @@
     currentSku = newDetailItem;
 }
 
+
 - (void)configureView
 {
     // Update the user interface for the detail item.

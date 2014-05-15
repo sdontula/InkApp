@@ -9,6 +9,7 @@
 #import "SIAppDelegate.h"
 #import "SISkuData.h"
 #import "SIMasterViewController.h"
+#import "Reachability.h"
 
 @implementation SIAppDelegate
 
@@ -52,4 +53,17 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (BOOL)isConnectivityAvailabile
+{
+    BOOL available = YES;
+    
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+    if (networkStatus == NotReachable) {
+        available = NO;
+    }
+    
+    return available;
+    
+}
 @end

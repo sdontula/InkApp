@@ -12,9 +12,10 @@
 #import "SISkuData.h"
 #import "SIImageFetcher.h"
 #import "AFNetworking.h"
+#import "SIAppDelegate.h"
 
 //#define dataURL @"http://127.0.0.1:8082/skuList"
-#define dataURL @"https://raw.githubusercontent.com/sdontula/InkApp/master/Staples%20Inventory/skuListFull.json"
+//#define dataURL @"https://raw.githubusercontent.com/sdontula/InkApp/master/Staples%20Inventory/skuListFull.json"
 
 static NSString * const BaseApiURLString = @"http://api.staples.com/v1/10001/product/partnumber/skunumber?locale=en_US&catalogId=10051&zipCode=02421&client_id=JxP9wlnIfCSeGc9ifRAAGku7F4FSdErd";
 
@@ -58,7 +59,15 @@ static bool showAlert = false;
 }
 
 - (void)getInventorySkuData{
-    NSURL * url = [NSURL URLWithString:dataURL];
+    SIAppDelegate *appDelegate = (SIAppDelegate *)[[UIApplication sharedApplication]delegate];
+    
+    if([appDelegate isConnectivityAvailabile] == NO)
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No Connectivity" message:@"You are not connected to internet." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+    NSURL * url = [NSURL URLWithString:_dataURL];
     NSData * data = [NSData dataWithContentsOfURL:url];
     _objects = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     _skus = [[NSMutableArray alloc] init];
@@ -67,7 +76,7 @@ static bool showAlert = false;
         NSString *description = [[_objects objectAtIndex:i] objectForKey:@"description"];
         NSString *capacity = [[_objects objectAtIndex:i] objectForKey:@"capacity"];
         NSString *threshold = [[_objects objectAtIndex:i] objectForKey:@"threshold"];
-        NSString *currentLevel = [[_objects objectAtIndex:i] objectForKey:@"currentLevel"];
+        NSString *currentLevel = [[[_objects objectAtIndex:i] objectForKey:@"currentLevel"] stringValue];
         NSString *imagePath = [[_objects objectAtIndex:i] objectForKey:@"imageUrl"];
         //NSLog(@"%@",imagePath);
         //NSString *imagePath = @"";
