@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		90DD68AE76B44D488C943B7F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3B13C0CBB24EE987E24C06 /* libPods.a */; };
+		952C1ADA192AE93600964586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952C1AD5192AE93600964586 /* Main.storyboard */; };
+		952C1ADB192AE93600964586 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 952C1AD7192AE93600964586 /* Reachability.m */; };
+		952C1ADC192AE93600964586 /* SIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 952C1AD9192AE93600964586 /* SIHomeViewController.m */; };
 		9557169A18DD5B2C00FE61B1 /* splash35@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9557169818DD5B2C00FE61B1 /* splash35@2x.jpg */; };
 		9557169B18DD5B2C00FE61B1 /* splash40@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9557169918DD5B2C00FE61B1 /* splash40@2x.jpg */; };
 		9566CA0218DD3E0F002F3D89 /* SIImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9566CA0118DD3E0F002F3D89 /* SIImageFetcher.m */; };
@@ -28,7 +31,6 @@
 		95A0F66918DC730E00DEB0C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95A0F66718DC730E00DEB0C7 /* InfoPlist.strings */; };
 		95A0F66B18DC730E00DEB0C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A0F66A18DC730E00DEB0C7 /* main.m */; };
 		95A0F66F18DC730E00DEB0C7 /* SIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A0F66E18DC730E00DEB0C7 /* SIAppDelegate.m */; };
-		95A0F67218DC730E00DEB0C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A0F67018DC730E00DEB0C7 /* Main.storyboard */; };
 		95A0F67518DC730E00DEB0C7 /* SIMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A0F67418DC730E00DEB0C7 /* SIMasterViewController.m */; };
 		95A0F67818DC730E00DEB0C7 /* SIDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A0F67718DC730E00DEB0C7 /* SIDetailViewController.m */; };
 		95A0F67A18DC730E00DEB0C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A0F67918DC730E00DEB0C7 /* Images.xcassets */; };
@@ -55,6 +57,11 @@
 /* Begin PBXFileReference section */
 		71DF080302C64F4ABA869FDF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		7A3B13C0CBB24EE987E24C06 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		952C1AD5192AE93600964586 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Staples Inventory/Main.storyboard"; sourceTree = "<group>"; };
+		952C1AD6192AE93600964586 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		952C1AD7192AE93600964586 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		952C1AD8192AE93600964586 /* SIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIHomeViewController.h; sourceTree = "<group>"; };
+		952C1AD9192AE93600964586 /* SIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIHomeViewController.m; sourceTree = "<group>"; };
 		9557169818DD5B2C00FE61B1 /* splash35@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "splash35@2x.jpg"; sourceTree = "<group>"; };
 		9557169918DD5B2C00FE61B1 /* splash40@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "splash40@2x.jpg"; sourceTree = "<group>"; };
 		9566CA0018DD3E0F002F3D89 /* SIImageFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIImageFetcher.h; sourceTree = "<group>"; };
@@ -80,7 +87,6 @@
 		95A0F66C18DC730E00DEB0C7 /* StaplesInventory-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaplesInventory-Prefix.pch"; sourceTree = "<group>"; };
 		95A0F66D18DC730E00DEB0C7 /* SIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIAppDelegate.h; sourceTree = "<group>"; };
 		95A0F66E18DC730E00DEB0C7 /* SIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIAppDelegate.m; sourceTree = "<group>"; };
-		95A0F67118DC730E00DEB0C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95A0F67318DC730E00DEB0C7 /* SIMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIMasterViewController.h; sourceTree = "<group>"; };
 		95A0F67418DC730E00DEB0C7 /* SIMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIMasterViewController.m; sourceTree = "<group>"; };
 		95A0F67618DC730E00DEB0C7 /* SIDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIDetailViewController.h; sourceTree = "<group>"; };
@@ -142,6 +148,7 @@
 		95A0F65218DC730E00DEB0C7 = {
 			isa = PBXGroup;
 			children = (
+				952C1AD5192AE93600964586 /* Main.storyboard */,
 				95A0F66418DC730E00DEB0C7 /* StaplesInventory */,
 				95A0F68618DC730E00DEB0C7 /* Staples InventoryTests */,
 				95A0F65D18DC730E00DEB0C7 /* Frameworks */,
@@ -223,7 +230,10 @@
 			children = (
 				95A0F66D18DC730E00DEB0C7 /* SIAppDelegate.h */,
 				95A0F66E18DC730E00DEB0C7 /* SIAppDelegate.m */,
-				95A0F67018DC730E00DEB0C7 /* Main.storyboard */,
+				952C1AD6192AE93600964586 /* Reachability.h */,
+				952C1AD7192AE93600964586 /* Reachability.m */,
+				952C1AD8192AE93600964586 /* SIHomeViewController.h */,
+				952C1AD9192AE93600964586 /* SIHomeViewController.m */,
 				95A0F67318DC730E00DEB0C7 /* SIMasterViewController.h */,
 				95A0F67418DC730E00DEB0C7 /* SIMasterViewController.m */,
 				95A0F67618DC730E00DEB0C7 /* SIDetailViewController.h */,
@@ -329,8 +339,8 @@
 				9566CA1518DD5314002F3D89 /* Icon-Small.png in Resources */,
 				95A0F66918DC730E00DEB0C7 /* InfoPlist.strings in Resources */,
 				95F6FB3D18DE7BAF00213163 /* mongodb.txt in Resources */,
-				95A0F67218DC730E00DEB0C7 /* Main.storyboard in Resources */,
 				9566CA1018DD5314002F3D89 /* Icon-40@2x.png in Resources */,
+				952C1ADA192AE93600964586 /* Main.storyboard in Resources */,
 				9566CA0618DD5021002F3D89 /* skuList.json in Resources */,
 				9566CA1118DD5314002F3D89 /* Icon-60.png in Resources */,
 				9557169B18DD5B2C00FE61B1 /* splash40@2x.jpg in Resources */,
@@ -393,12 +403,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				95A0F67518DC730E00DEB0C7 /* SIMasterViewController.m in Sources */,
+				952C1ADC192AE93600964586 /* SIHomeViewController.m in Sources */,
 				9566CA0218DD3E0F002F3D89 /* SIImageFetcher.m in Sources */,
 				95A0F67818DC730E00DEB0C7 /* SIDetailViewController.m in Sources */,
 				95A0F66F18DC730E00DEB0C7 /* SIAppDelegate.m in Sources */,
 				95A0F69A18DCB14400DEB0C7 /* SISkuData.m in Sources */,
 				95A0F66B18DC730E00DEB0C7 /* main.m in Sources */,
 				958B3DED18DFEEF50032468E /* SkuListNode.js.txt in Sources */,
+				952C1ADB192AE93600964586 /* Reachability.m in Sources */,
 				9566CA0518DD5021002F3D89 /* Node3.js.txt in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,14 +440,6 @@
 				95A0F66818DC730E00DEB0C7 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		95A0F67018DC730E00DEB0C7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				95A0F67118DC730E00DEB0C7 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		95A0F68918DC730E00DEB0C7 /* InfoPlist.strings */ = {
@@ -529,7 +533,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Staples Inventory/StaplesInventory-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Staples Inventory/StaplesInventory-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = StaplesInventory;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -546,7 +550,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Staples Inventory/StaplesInventory-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Staples Inventory/StaplesInventory-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = StaplesInventory;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
