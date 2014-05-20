@@ -47,6 +47,7 @@ static bool showAlert = false;
     //self.navigationItem.rightBarButtonItem = addButton;
     [self retreiveData];
     self.title=@"Staples Ink Inventory";
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"List" style:UIBarButtonItemStylePlain target:nil action:nil];
     imgFetcher = [[SIImageFetcher alloc] init];    
 }
 
@@ -182,10 +183,12 @@ static bool showAlert = false;
     
     bool flag = [currentNum intValue] < [thresholdNum intValue];
     if(flag){
-        cell.backgroundColor = [UIColor redColor];
+        //cell.backgroundColor = [UIColor redColor];
+        cell.contentView.backgroundColor = [UIColor redColor];
         showAlert = true;
     }else{
-        cell.backgroundColor = [UIColor whiteColor];
+        //cell.backgroundColor = [UIColor whiteColor];
+        cell.contentView.backgroundColor = [UIColor whiteColor];
     }
     
     //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

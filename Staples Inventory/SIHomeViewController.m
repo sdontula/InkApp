@@ -51,6 +51,8 @@
     [highSkuButton setHidden:YES];
     [lowSkuButton setHidden:YES];
     [self getStoreList];
+    self.title=@"Choose Your Store";
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Store" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
 - (IBAction)refreshStoreList:(id)sender
