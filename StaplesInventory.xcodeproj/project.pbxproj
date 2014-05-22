@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		90DD68AE76B44D488C943B7F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A3B13C0CBB24EE987E24C06 /* libPods.a */; };
 		952C1ADA192AE93600964586 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952C1AD5192AE93600964586 /* Main.storyboard */; };
-		952C1ADB192AE93600964586 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 952C1AD7192AE93600964586 /* Reachability.m */; };
 		952C1ADC192AE93600964586 /* SIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 952C1AD9192AE93600964586 /* SIHomeViewController.m */; };
 		9557169A18DD5B2C00FE61B1 /* splash35@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9557169818DD5B2C00FE61B1 /* splash35@2x.jpg */; };
 		9557169B18DD5B2C00FE61B1 /* splash40@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9557169918DD5B2C00FE61B1 /* splash40@2x.jpg */; };
@@ -58,8 +57,6 @@
 		71DF080302C64F4ABA869FDF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		7A3B13C0CBB24EE987E24C06 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		952C1AD5192AE93600964586 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Staples Inventory/Main.storyboard"; sourceTree = "<group>"; };
-		952C1AD6192AE93600964586 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		952C1AD7192AE93600964586 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		952C1AD8192AE93600964586 /* SIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIHomeViewController.h; sourceTree = "<group>"; };
 		952C1AD9192AE93600964586 /* SIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIHomeViewController.m; sourceTree = "<group>"; };
 		9557169818DD5B2C00FE61B1 /* splash35@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "splash35@2x.jpg"; sourceTree = "<group>"; };
@@ -230,8 +227,6 @@
 			children = (
 				95A0F66D18DC730E00DEB0C7 /* SIAppDelegate.h */,
 				95A0F66E18DC730E00DEB0C7 /* SIAppDelegate.m */,
-				952C1AD6192AE93600964586 /* Reachability.h */,
-				952C1AD7192AE93600964586 /* Reachability.m */,
 				952C1AD8192AE93600964586 /* SIHomeViewController.h */,
 				952C1AD9192AE93600964586 /* SIHomeViewController.m */,
 				95A0F67318DC730E00DEB0C7 /* SIMasterViewController.h */,
@@ -410,7 +405,6 @@
 				95A0F69A18DCB14400DEB0C7 /* SISkuData.m in Sources */,
 				95A0F66B18DC730E00DEB0C7 /* main.m in Sources */,
 				958B3DED18DFEEF50032468E /* SkuListNode.js.txt in Sources */,
-				952C1ADB192AE93600964586 /* Reachability.m in Sources */,
 				9566CA0518DD5021002F3D89 /* Node3.js.txt in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

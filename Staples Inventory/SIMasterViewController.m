@@ -76,7 +76,7 @@ static bool showAlert = false;
         NSString *sku = [[_objects objectAtIndex:i] objectForKey:@"sku"];
         NSString *description = [[_objects objectAtIndex:i] objectForKey:@"description"];
         NSString *capacity = [[_objects objectAtIndex:i] objectForKey:@"capacity"];
-        NSString *threshold = [[_objects objectAtIndex:i] objectForKey:@"threshold"];
+        NSString *threshold = [NSString stringWithFormat:@"%@", [[_objects objectAtIndex:i]objectForKey:@"threshold"]];
         NSString *currentLevel = [[[_objects objectAtIndex:i] objectForKey:@"currentLevel"] stringValue];
         NSString *imagePath = [[_objects objectAtIndex:i] objectForKey:@"imageUrl"];
         //NSLog(@"%@",imagePath);
