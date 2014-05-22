@@ -10,8 +10,8 @@
 #import "SIMasterViewController.h"
 #import "SIAppDelegate.h"
 
-#define STORELISTURL @"http://localhost:3001/storeList"
-#define STORESKUURL @"http://localhost:3001/skuList?store="
+#define STORELISTURL @"http://velocitylinux:3001/storeList"
+#define STORESKUURL @"http://velocitylinux:3001/skuList?store="
 
 @interface SIHomeViewController ()
 {
