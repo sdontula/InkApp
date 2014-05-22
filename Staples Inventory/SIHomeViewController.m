@@ -113,7 +113,7 @@
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
                                if(error)
                                {
-                                   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please try after sometime." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to connect to store inventory service." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                                    [alert show];
                                    
                                }
