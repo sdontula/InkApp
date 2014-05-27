@@ -19,8 +19,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *skuDetailLabel;
 @property (weak, nonatomic) IBOutlet UILabel *skuCapacityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *skuCurrentLevel;
+@property (weak, nonatomic) IBOutlet UILabel *skuRestockLevel;
 @property (weak, nonatomic) IBOutlet UILabel *skuThresholdLabel;
-
+@property (weak, nonatomic) IBOutlet UILabel *skuOnShelfLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *skuImageView;
 @property (weak, nonatomic) SISkuData *currentSku;
 

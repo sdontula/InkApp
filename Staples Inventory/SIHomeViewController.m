@@ -9,9 +9,10 @@
 #import "SIHomeViewController.h"
 #import "SIMasterViewController.h"
 #import "SIAppDelegate.h"
+#import "XLappMgr.h"
 
-#define STORELISTURL @"http://velocitylinux:3001/storeList"
-#define STORESKUURL @"http://velocitylinux:3001/skuList?store="
+#define STORELISTURL @"http://localhost:3001/storeList"
+#define STORESKUURL @"http://localhost:3001/skuList?store="
 
 @interface SIHomeViewController ()
 {
@@ -229,6 +230,11 @@
         selectedRow =row;
         [highSkuButton setHidden:NO];
         [lowSkuButton setHidden:NO];
+        
+        //Tag the xid with store number tag.
+        NSMutableArray *tagsArray = [[NSMutableArray alloc] init];
+        [tagsArray addObject:[storeNumber objectAtIndex:row]];
+        [[XLappMgr get] setTag:tagsArray];
     }
 }
 - (IBAction)lowProfileSKUList:(id)sender

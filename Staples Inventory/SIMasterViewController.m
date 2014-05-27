@@ -76,13 +76,15 @@ static bool showAlert = false;
         NSString *sku = [[_objects objectAtIndex:i] objectForKey:@"sku"];
         NSString *description = [[_objects objectAtIndex:i] objectForKey:@"description"];
         NSString *capacity = [[_objects objectAtIndex:i] objectForKey:@"capacity"];
+        NSString *restockLevel = [NSString stringWithFormat:@"%@", [[_objects objectAtIndex:i]objectForKey:@"restockLevel"]];
         NSString *threshold = [NSString stringWithFormat:@"%@", [[_objects objectAtIndex:i]objectForKey:@"threshold"]];
+        NSString *onShelf = [NSString stringWithFormat:@"%@", [[_objects objectAtIndex:i]objectForKey:@"onShelf"]];
         NSString *currentLevel = [[[_objects objectAtIndex:i] objectForKey:@"currentLevel"] stringValue];
         NSString *imagePath = [[_objects objectAtIndex:i] objectForKey:@"imageUrl"];
         //NSLog(@"%@",imagePath);
         //NSString *imagePath = @"";
         //if([sku isEqualToString:@"325905"]){
-            [_skus addObject:[[SISkuData alloc]initWithDesc:sku description:description capacity:capacity threshold:threshold currentLevel:currentLevel imagePath:imagePath]];
+        [_skus addObject:[[SISkuData alloc]initWithDesc:sku description:description capacity:capacity threshold:threshold onShelf:onShelf currentLevel:currentLevel restockLevel:restockLevel imagePath:imagePath]];
         //}
     }
 }

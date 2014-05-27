@@ -12,6 +12,35 @@
 		952C1ADC192AE93600964586 /* SIHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 952C1AD9192AE93600964586 /* SIHomeViewController.m */; };
 		9557169A18DD5B2C00FE61B1 /* splash35@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9557169818DD5B2C00FE61B1 /* splash35@2x.jpg */; };
 		9557169B18DD5B2C00FE61B1 /* splash40@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9557169918DD5B2C00FE61B1 /* splash40@2x.jpg */; };
+		955F3169192EEE4000DD0D71 /* CompanyCustomInbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 955F3147192EEE4000DD0D71 /* CompanyCustomInbox.m */; };
+		955F316A192EEE4000DD0D71 /* CompanyDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 955F3149192EEE4000DD0D71 /* CompanyDetailsVC.m */; };
+		955F316B192EEE4000DD0D71 /* CompanyDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 955F314A192EEE4000DD0D71 /* CompanyDetailsVC.xib */; };
+		955F316C192EEE4000DD0D71 /* CompanyInbox.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 955F314B192EEE4000DD0D71 /* CompanyInbox.xcdatamodel */; };
+		955F316D192EEE4000DD0D71 /* CompanyInboxHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 955F314D192EEE4000DD0D71 /* CompanyInboxHandler.m */; };
+		955F316E192EEE4000DD0D71 /* CompanyInboxVC-pad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 955F314E192EEE4000DD0D71 /* CompanyInboxVC-pad.xib */; };
+		955F316F192EEE4000DD0D71 /* CompanyInboxVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 955F3150192EEE4000DD0D71 /* CompanyInboxVC.m */; };
+		955F3170192EEE4000DD0D71 /* CompanyInboxVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 955F3151192EEE4000DD0D71 /* CompanyInboxVC.xib */; };
+		955F3171192EEE4000DD0D71 /* CompanyInboxViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 955F3153192EEE4000DD0D71 /* CompanyInboxViewCell.m */; };
+		955F3172192EEE4000DD0D71 /* CompanyInboxViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 955F3154192EEE4000DD0D71 /* CompanyInboxViewCell.xib */; };
+		955F3173192EEE4000DD0D71 /* XLXtifyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 955F315E192EEE4000DD0D71 /* XLXtifyOptions.m */; };
+		955F3174192EEE4000DD0D71 /* chime.caf in Resources */ = {isa = PBXBuildFile; fileRef = 955F3162192EEE4000DD0D71 /* chime.caf */; };
+		955F3175192EEE4000DD0D71 /* ding.caf in Resources */ = {isa = PBXBuildFile; fileRef = 955F3163192EEE4000DD0D71 /* ding.caf */; };
+		955F3176192EEE4000DD0D71 /* expireMsgTemplate.html in Resources */ = {isa = PBXBuildFile; fileRef = 955F3164192EEE4000DD0D71 /* expireMsgTemplate.html */; };
+		955F3177192EEE4000DD0D71 /* richnotification.mom in Resources */ = {isa = PBXBuildFile; fileRef = 955F3165192EEE4000DD0D71 /* richnotification.mom */; };
+		955F3178192EEE4000DD0D71 /* richnotificationV1.15.mom in Resources */ = {isa = PBXBuildFile; fileRef = 955F3166192EEE4000DD0D71 /* richnotificationV1.15.mom */; };
+		955F3179192EEE4000DD0D71 /* silence.caf in Resources */ = {isa = PBXBuildFile; fileRef = 955F3167192EEE4000DD0D71 /* silence.caf */; };
+		955F317A192EEE4000DD0D71 /* XtifyPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F3168192EEE4000DD0D71 /* XtifyPush.framework */; };
+		955F3180192EF05500DD0D71 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F317F192EF05500DD0D71 /* SystemConfiguration.framework */; };
+		955F3182192EF05F00DD0D71 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F3181192EF05F00DD0D71 /* MapKit.framework */; };
+		955F3184192EF06A00DD0D71 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F3183192EF06A00DD0D71 /* CoreData.framework */; };
+		955F3186192EF07400DD0D71 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F3185192EF07400DD0D71 /* MessageUI.framework */; };
+		955F3188192EF07D00DD0D71 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F3187192EF07D00DD0D71 /* CoreLocation.framework */; };
+		955F318A192EF08900DD0D71 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F3189192EF08900DD0D71 /* CFNetwork.framework */; };
+		955F318C192EF09500DD0D71 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F318B192EF09500DD0D71 /* libxml2.2.dylib */; };
+		955F318E192EF09F00DD0D71 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F318D192EF09F00DD0D71 /* libz.1.1.3.dylib */; };
+		955F3190192EF0AA00DD0D71 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F318F192EF0AA00DD0D71 /* MobileCoreServices.framework */; };
+		955F3192192EF0B300DD0D71 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955F3191192EF0B300DD0D71 /* CoreTelephony.framework */; };
+		955F3196192EF15C00DD0D71 /* SI_Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 955F3195192EF15C00DD0D71 /* SI_Reachability.m */; };
 		9566CA0218DD3E0F002F3D89 /* SIImageFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9566CA0118DD3E0F002F3D89 /* SIImageFetcher.m */; };
 		9566CA0F18DD5314002F3D89 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0718DD5313002F3D89 /* Icon-40.png */; };
 		9566CA1018DD5314002F3D89 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9566CA0818DD5313002F3D89 /* Icon-40@2x.png */; };
@@ -56,6 +85,51 @@
 		952C1AD9192AE93600964586 /* SIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIHomeViewController.m; sourceTree = "<group>"; };
 		9557169818DD5B2C00FE61B1 /* splash35@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "splash35@2x.jpg"; sourceTree = "<group>"; };
 		9557169918DD5B2C00FE61B1 /* splash40@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "splash40@2x.jpg"; sourceTree = "<group>"; };
+		955F3141192EE98200DD0D71 /* libPods-XtifyLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-XtifyLib.a"; path = "Pods/build/Debug-iphoneos/libPods-XtifyLib.a"; sourceTree = "<group>"; };
+		955F3146192EEE4000DD0D71 /* CompanyCustomInbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyCustomInbox.h; sourceTree = "<group>"; };
+		955F3147192EEE4000DD0D71 /* CompanyCustomInbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyCustomInbox.m; sourceTree = "<group>"; };
+		955F3148192EEE4000DD0D71 /* CompanyDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyDetailsVC.h; sourceTree = "<group>"; };
+		955F3149192EEE4000DD0D71 /* CompanyDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyDetailsVC.m; sourceTree = "<group>"; };
+		955F314A192EEE4000DD0D71 /* CompanyDetailsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyDetailsVC.xib; sourceTree = "<group>"; };
+		955F314B192EEE4000DD0D71 /* CompanyInbox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CompanyInbox.xcdatamodel; sourceTree = "<group>"; };
+		955F314C192EEE4000DD0D71 /* CompanyInboxHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyInboxHandler.h; sourceTree = "<group>"; };
+		955F314D192EEE4000DD0D71 /* CompanyInboxHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyInboxHandler.m; sourceTree = "<group>"; };
+		955F314E192EEE4000DD0D71 /* CompanyInboxVC-pad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "CompanyInboxVC-pad.xib"; sourceTree = "<group>"; };
+		955F314F192EEE4000DD0D71 /* CompanyInboxVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyInboxVC.h; sourceTree = "<group>"; };
+		955F3150192EEE4000DD0D71 /* CompanyInboxVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyInboxVC.m; sourceTree = "<group>"; };
+		955F3151192EEE4000DD0D71 /* CompanyInboxVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyInboxVC.xib; sourceTree = "<group>"; };
+		955F3152192EEE4000DD0D71 /* CompanyInboxViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyInboxViewCell.h; sourceTree = "<group>"; };
+		955F3153192EEE4000DD0D71 /* CompanyInboxViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyInboxViewCell.m; sourceTree = "<group>"; };
+		955F3154192EEE4000DD0D71 /* CompanyInboxViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompanyInboxViewCell.xib; sourceTree = "<group>"; };
+		955F3156192EEE4000DD0D71 /* XRInboxDbInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRInboxDbInterface.h; sourceTree = "<group>"; };
+		955F3157192EEE4000DD0D71 /* XRInboxUiDbDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XRInboxUiDbDelegate.h; sourceTree = "<group>"; };
+		955F3158192EEE4000DD0D71 /* RichDbMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichDbMessage.h; sourceTree = "<group>"; };
+		955F3159192EEE4000DD0D71 /* XLappMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLappMgr.h; sourceTree = "<group>"; };
+		955F315A192EEE4000DD0D71 /* XLCustomInboxMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCustomInboxMgr.h; sourceTree = "<group>"; };
+		955F315B192EEE4000DD0D71 /* XLhmSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLhmSupport.h; sourceTree = "<group>"; };
+		955F315C192EEE4000DD0D71 /* XLRichJsonMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRichJsonMessage.h; sourceTree = "<group>"; };
+		955F315D192EEE4000DD0D71 /* XLXtifyOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLXtifyOptions.h; sourceTree = "<group>"; };
+		955F315E192EEE4000DD0D71 /* XLXtifyOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLXtifyOptions.m; sourceTree = "<group>"; };
+		955F315F192EEE4000DD0D71 /* XtifyGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XtifyGlobal.h; sourceTree = "<group>"; };
+		955F3162192EEE4000DD0D71 /* chime.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chime.caf; sourceTree = "<group>"; };
+		955F3163192EEE4000DD0D71 /* ding.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ding.caf; sourceTree = "<group>"; };
+		955F3164192EEE4000DD0D71 /* expireMsgTemplate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = expireMsgTemplate.html; sourceTree = "<group>"; };
+		955F3165192EEE4000DD0D71 /* richnotification.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = richnotification.mom; sourceTree = "<group>"; };
+		955F3166192EEE4000DD0D71 /* richnotificationV1.15.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = richnotificationV1.15.mom; sourceTree = "<group>"; };
+		955F3167192EEE4000DD0D71 /* silence.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = silence.caf; sourceTree = "<group>"; };
+		955F3168192EEE4000DD0D71 /* XtifyPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = XtifyPush.framework; sourceTree = "<group>"; };
+		955F317F192EF05500DD0D71 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		955F3181192EF05F00DD0D71 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		955F3183192EF06A00DD0D71 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		955F3185192EF07400DD0D71 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		955F3187192EF07D00DD0D71 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		955F3189192EF08900DD0D71 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		955F318B192EF09500DD0D71 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		955F318D192EF09F00DD0D71 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		955F318F192EF0AA00DD0D71 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		955F3191192EF0B300DD0D71 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		955F3194192EF15100DD0D71 /* SI_Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SI_Reachability.h; sourceTree = "<group>"; };
+		955F3195192EF15C00DD0D71 /* SI_Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SI_Reachability.m; sourceTree = "<group>"; };
 		9566CA0018DD3E0F002F3D89 /* SIImageFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIImageFetcher.h; sourceTree = "<group>"; };
 		9566CA0118DD3E0F002F3D89 /* SIImageFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIImageFetcher.m; sourceTree = "<group>"; };
 		9566CA0718DD5313002F3D89 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
@@ -95,8 +169,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				955F3192192EF0B300DD0D71 /* CoreTelephony.framework in Frameworks */,
+				955F3190192EF0AA00DD0D71 /* MobileCoreServices.framework in Frameworks */,
+				955F318E192EF09F00DD0D71 /* libz.1.1.3.dylib in Frameworks */,
+				955F318C192EF09500DD0D71 /* libxml2.2.dylib in Frameworks */,
+				955F318A192EF08900DD0D71 /* CFNetwork.framework in Frameworks */,
+				955F3188192EF07D00DD0D71 /* CoreLocation.framework in Frameworks */,
+				955F3186192EF07400DD0D71 /* MessageUI.framework in Frameworks */,
+				955F3184192EF06A00DD0D71 /* CoreData.framework in Frameworks */,
+				955F3182192EF05F00DD0D71 /* MapKit.framework in Frameworks */,
+				955F3180192EF05500DD0D71 /* SystemConfiguration.framework in Frameworks */,
 				95A0F66118DC730E00DEB0C7 /* CoreGraphics.framework in Frameworks */,
 				95A0F66318DC730E00DEB0C7 /* UIKit.framework in Frameworks */,
+				955F317A192EEE4000DD0D71 /* XtifyPush.framework in Frameworks */,
 				95A0F65F18DC730E00DEB0C7 /* Foundation.framework in Frameworks */,
 				90DD68AE76B44D488C943B7F /* libPods.a in Frameworks */,
 			);
@@ -115,6 +200,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		955F3143192EEE4000DD0D71 /* XtifyLib */ = {
+			isa = PBXGroup;
+			children = (
+				955F3144192EEE4000DD0D71 /* CustomInbox */,
+				955F3158192EEE4000DD0D71 /* RichDbMessage.h */,
+				955F3159192EEE4000DD0D71 /* XLappMgr.h */,
+				955F315A192EEE4000DD0D71 /* XLCustomInboxMgr.h */,
+				955F315B192EEE4000DD0D71 /* XLhmSupport.h */,
+				955F315C192EEE4000DD0D71 /* XLRichJsonMessage.h */,
+				955F315D192EEE4000DD0D71 /* XLXtifyOptions.h */,
+				955F315E192EEE4000DD0D71 /* XLXtifyOptions.m */,
+				955F315F192EEE4000DD0D71 /* XtifyGlobal.h */,
+				955F3160192EEE4000DD0D71 /* XtifyPush.embeddedframework */,
+			);
+			path = XtifyLib;
+			sourceTree = "<group>";
+		};
+		955F3144192EEE4000DD0D71 /* CustomInbox */ = {
+			isa = PBXGroup;
+			children = (
+				955F3145192EEE4000DD0D71 /* AppInclude */,
+				955F3155192EEE4000DD0D71 /* LibInclude */,
+			);
+			path = CustomInbox;
+			sourceTree = "<group>";
+		};
+		955F3145192EEE4000DD0D71 /* AppInclude */ = {
+			isa = PBXGroup;
+			children = (
+				955F3146192EEE4000DD0D71 /* CompanyCustomInbox.h */,
+				955F3147192EEE4000DD0D71 /* CompanyCustomInbox.m */,
+				955F3148192EEE4000DD0D71 /* CompanyDetailsVC.h */,
+				955F3149192EEE4000DD0D71 /* CompanyDetailsVC.m */,
+				955F314A192EEE4000DD0D71 /* CompanyDetailsVC.xib */,
+				955F314B192EEE4000DD0D71 /* CompanyInbox.xcdatamodel */,
+				955F314C192EEE4000DD0D71 /* CompanyInboxHandler.h */,
+				955F314D192EEE4000DD0D71 /* CompanyInboxHandler.m */,
+				955F314E192EEE4000DD0D71 /* CompanyInboxVC-pad.xib */,
+				955F314F192EEE4000DD0D71 /* CompanyInboxVC.h */,
+				955F3150192EEE4000DD0D71 /* CompanyInboxVC.m */,
+				955F3151192EEE4000DD0D71 /* CompanyInboxVC.xib */,
+				955F3152192EEE4000DD0D71 /* CompanyInboxViewCell.h */,
+				955F3153192EEE4000DD0D71 /* CompanyInboxViewCell.m */,
+				955F3154192EEE4000DD0D71 /* CompanyInboxViewCell.xib */,
+			);
+			path = AppInclude;
+			sourceTree = "<group>";
+		};
+		955F3155192EEE4000DD0D71 /* LibInclude */ = {
+			isa = PBXGroup;
+			children = (
+				955F3156192EEE4000DD0D71 /* XRInboxDbInterface.h */,
+				955F3157192EEE4000DD0D71 /* XRInboxUiDbDelegate.h */,
+			);
+			path = LibInclude;
+			sourceTree = "<group>";
+		};
+		955F3160192EEE4000DD0D71 /* XtifyPush.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				955F3161192EEE4000DD0D71 /* Resources */,
+				955F3168192EEE4000DD0D71 /* XtifyPush.framework */,
+			);
+			path = XtifyPush.embeddedframework;
+			sourceTree = "<group>";
+		};
+		955F3161192EEE4000DD0D71 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				955F3162192EEE4000DD0D71 /* chime.caf */,
+				955F3163192EEE4000DD0D71 /* ding.caf */,
+				955F3164192EEE4000DD0D71 /* expireMsgTemplate.html */,
+				955F3165192EEE4000DD0D71 /* richnotification.mom */,
+				955F3166192EEE4000DD0D71 /* richnotificationV1.15.mom */,
+				955F3167192EEE4000DD0D71 /* silence.caf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		955F3193192EF13400DD0D71 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				955F3195192EF15C00DD0D71 /* SI_Reachability.m */,
+				955F3194192EF15100DD0D71 /* SI_Reachability.h */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 		9566CA1718DD531C002F3D89 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +308,7 @@
 		95A0F65218DC730E00DEB0C7 = {
 			isa = PBXGroup;
 			children = (
+				955F3143192EEE4000DD0D71 /* XtifyLib */,
 				952C1AD5192AE93600964586 /* Main.storyboard */,
 				95A0F66418DC730E00DEB0C7 /* StaplesInventory */,
 				95A0F68618DC730E00DEB0C7 /* Staples InventoryTests */,
@@ -156,6 +330,17 @@
 		95A0F65D18DC730E00DEB0C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				955F3191192EF0B300DD0D71 /* CoreTelephony.framework */,
+				955F318F192EF0AA00DD0D71 /* MobileCoreServices.framework */,
+				955F318D192EF09F00DD0D71 /* libz.1.1.3.dylib */,
+				955F318B192EF09500DD0D71 /* libxml2.2.dylib */,
+				955F3189192EF08900DD0D71 /* CFNetwork.framework */,
+				955F3187192EF07D00DD0D71 /* CoreLocation.framework */,
+				955F3185192EF07400DD0D71 /* MessageUI.framework */,
+				955F3183192EF06A00DD0D71 /* CoreData.framework */,
+				955F3181192EF05F00DD0D71 /* MapKit.framework */,
+				955F317F192EF05500DD0D71 /* SystemConfiguration.framework */,
+				955F3141192EE98200DD0D71 /* libPods-XtifyLib.a */,
 				95A0F65E18DC730E00DEB0C7 /* Foundation.framework */,
 				95A0F66018DC730E00DEB0C7 /* CoreGraphics.framework */,
 				95A0F66218DC730E00DEB0C7 /* UIKit.framework */,
@@ -168,6 +353,7 @@
 		95A0F66418DC730E00DEB0C7 /* StaplesInventory */ = {
 			isa = PBXGroup;
 			children = (
+				955F3193192EF13400DD0D71 /* Libraries */,
 				95A0F69718DCB0D900DEB0C7 /* Model */,
 				95A0F69618DCB0C400DEB0C7 /* UI */,
 				95A0F67918DC730E00DEB0C7 /* Images.xcassets */,
@@ -317,14 +503,24 @@
 			files = (
 				95A0F67A18DC730E00DEB0C7 /* Images.xcassets in Resources */,
 				9566CA1518DD5314002F3D89 /* Icon-Small.png in Resources */,
+				955F316E192EEE4000DD0D71 /* CompanyInboxVC-pad.xib in Resources */,
+				955F3170192EEE4000DD0D71 /* CompanyInboxVC.xib in Resources */,
 				95A0F66918DC730E00DEB0C7 /* InfoPlist.strings in Resources */,
+				955F3179192EEE4000DD0D71 /* silence.caf in Resources */,
 				9566CA1018DD5314002F3D89 /* Icon-40@2x.png in Resources */,
 				952C1ADA192AE93600964586 /* Main.storyboard in Resources */,
 				9566CA1118DD5314002F3D89 /* Icon-60.png in Resources */,
 				9557169B18DD5B2C00FE61B1 /* splash40@2x.jpg in Resources */,
+				955F3175192EEE4000DD0D71 /* ding.caf in Resources */,
+				955F3177192EEE4000DD0D71 /* richnotification.mom in Resources */,
+				955F3174192EEE4000DD0D71 /* chime.caf in Resources */,
+				955F3172192EEE4000DD0D71 /* CompanyInboxViewCell.xib in Resources */,
 				9566CA0F18DD5314002F3D89 /* Icon-40.png in Resources */,
+				955F3176192EEE4000DD0D71 /* expireMsgTemplate.html in Resources */,
 				9557169A18DD5B2C00FE61B1 /* splash35@2x.jpg in Resources */,
+				955F316B192EEE4000DD0D71 /* CompanyDetailsVC.xib in Resources */,
 				9566CA1218DD5314002F3D89 /* Icon-60@2x.png in Resources */,
+				955F3178192EEE4000DD0D71 /* richnotificationV1.15.mom in Resources */,
 				9566CA1618DD5314002F3D89 /* Icon-Small@2x.png in Resources */,
 				9566CA1418DD5314002F3D89 /* Icon-76@2x.png in Resources */,
 				9566CA1318DD5314002F3D89 /* Icon-76.png in Resources */,
@@ -379,13 +575,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				955F316A192EEE4000DD0D71 /* CompanyDetailsVC.m in Sources */,
+				955F316D192EEE4000DD0D71 /* CompanyInboxHandler.m in Sources */,
 				95A0F67518DC730E00DEB0C7 /* SIMasterViewController.m in Sources */,
+				955F3169192EEE4000DD0D71 /* CompanyCustomInbox.m in Sources */,
+				955F3196192EF15C00DD0D71 /* SI_Reachability.m in Sources */,
+				955F316C192EEE4000DD0D71 /* CompanyInbox.xcdatamodel in Sources */,
 				952C1ADC192AE93600964586 /* SIHomeViewController.m in Sources */,
 				9566CA0218DD3E0F002F3D89 /* SIImageFetcher.m in Sources */,
+				955F316F192EEE4000DD0D71 /* CompanyInboxVC.m in Sources */,
 				95A0F67818DC730E00DEB0C7 /* SIDetailViewController.m in Sources */,
 				95A0F66F18DC730E00DEB0C7 /* SIAppDelegate.m in Sources */,
+				955F3171192EEE4000DD0D71 /* CompanyInboxViewCell.m in Sources */,
 				95A0F69A18DCB14400DEB0C7 /* SISkuData.m in Sources */,
 				95A0F66B18DC730E00DEB0C7 /* main.m in Sources */,
+				955F3173192EEE4000DD0D71 /* XLXtifyOptions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,10 +708,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XtifyLib/XtifyPush.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Staples Inventory/StaplesInventory-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Staples Inventory/StaplesInventory-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = StaplesInventory;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
@@ -522,10 +734,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XtifyLib/XtifyPush.embeddedframework",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Staples Inventory/StaplesInventory-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Staples Inventory/StaplesInventory-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = StaplesInventory;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";

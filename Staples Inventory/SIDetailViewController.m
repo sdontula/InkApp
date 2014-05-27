@@ -18,7 +18,7 @@
 
 @implementation SIDetailViewController
 
-@synthesize skuIdLabel, skuDetailLabel, skuCapacityLabel, skuThresholdLabel, skuCurrentLevel , skuImageView, currentSku;
+@synthesize skuIdLabel, skuDetailLabel, skuCapacityLabel, skuThresholdLabel, skuOnShelfLabel, skuCurrentLevel, skuRestockLevel, skuImageView, currentSku;
 
 #pragma mark - Managing the detail item
 
@@ -50,16 +50,28 @@
     skuDetailLabel.text = currentSku.description;
     skuCapacityLabel.text = currentSku.capacity;
     skuThresholdLabel.text = currentSku.threshold;
+    skuOnShelfLabel.text = currentSku.onShelf;
     skuCurrentLevel.text = currentSku.currentLevel;
+    skuRestockLevel.text = currentSku.restockLevel;
+    
+    
     skuImageView.image = [imgFetcher fetchImage:currentSku.imagePath];
     
     NSNumber  *currentNum = [NSNumber numberWithInteger: [currentSku.currentLevel integerValue]];
+    NSNumber  *capacityNum = [NSNumber numberWithInteger: [currentSku.capacity integerValue]];
+    
     NSNumber  *thresholdNum = [NSNumber numberWithInteger: [currentSku.threshold integerValue]];
+    NSNumber  *onShelfNum = [NSNumber numberWithInteger: [currentSku.onShelf integerValue]];
     
     //if(indexPath.row == 2){
-    bool flag = [currentNum intValue] < [thresholdNum intValue];
+    bool flag = [currentNum intValue] < [capacityNum intValue];
     if(flag){
         skuCurrentLevel.backgroundColor = [UIColor redColor];
+    }
+    
+    bool belowThresholdFlag = [onShelfNum intValue] < [thresholdNum intValue];
+    if(belowThresholdFlag){
+        skuCurrentLevel.backgroundColor = [UIColor yellowColor];
     }
 }
 

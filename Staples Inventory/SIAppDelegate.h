@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class XLappMgr;
+
 @interface SIAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
