@@ -131,9 +131,9 @@ static bool showAlert = false;
 - (void) shouldIShowAlert{
     showAlert = false;
     for (SISkuData *skuData in _skus){
-        NSNumber  *currentNum = [NSNumber numberWithInteger: [skuData.currentLevel integerValue]];
+        NSNumber  *onShelfNum = [NSNumber numberWithInteger: [skuData.onShelf integerValue]];
         NSNumber  *thresholdNum = [NSNumber numberWithInteger: [skuData.threshold integerValue]];
-        showAlert = [currentNum intValue] < [thresholdNum intValue];
+        showAlert = [onShelfNum intValue] < [thresholdNum intValue];
         if(showAlert) break;
     }
 }
@@ -181,15 +181,20 @@ static bool showAlert = false;
     //NSLog(@"%@",skuData.imagePath);
     
     NSNumber  *currentNum = [NSNumber numberWithInteger: [skuData.currentLevel integerValue]];
-    NSNumber  *thresholdNum = [NSNumber numberWithInteger: [skuData.threshold integerValue]];
+    NSNumber  *capacityNum = [NSNumber numberWithInteger: [skuData.capacity integerValue]];
     
-    bool flag = [currentNum intValue] < [thresholdNum intValue];
+    NSNumber  *thresholdNum = [NSNumber numberWithInteger: [skuData.threshold integerValue]];    
+    NSNumber  *onShelfNum = [NSNumber numberWithInteger: [skuData.onShelf integerValue]];
+    
+    bool flag = [currentNum intValue] < [capacityNum intValue];
+    bool belowThresholdFlag = [onShelfNum intValue] < [thresholdNum intValue];
     if(flag){
         //cell.backgroundColor = [UIColor redColor];
         cell.contentView.backgroundColor = [UIColor redColor];
+    }else if(belowThresholdFlag){
+        cell.contentView.backgroundColor = [UIColor yellowColor];
         showAlert = true;
     }else{
-        //cell.backgroundColor = [UIColor whiteColor];
         cell.contentView.backgroundColor = [UIColor whiteColor];
     }
     

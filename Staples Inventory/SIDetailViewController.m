@@ -65,13 +65,11 @@
     
     //if(indexPath.row == 2){
     bool flag = [currentNum intValue] < [capacityNum intValue];
-    if(flag){
-        skuCurrentLevel.backgroundColor = [UIColor redColor];
-    }
-    
     bool belowThresholdFlag = [onShelfNum intValue] < [thresholdNum intValue];
-    if(belowThresholdFlag){
-        skuCurrentLevel.backgroundColor = [UIColor yellowColor];
+    if(flag){
+        skuOnShelfLabel.backgroundColor = [UIColor redColor];
+    }else if(belowThresholdFlag){
+        skuOnShelfLabel.backgroundColor = [UIColor yellowColor];
     }
 }
 

@@ -11,8 +11,8 @@
 #import "SIAppDelegate.h"
 #import "XLappMgr.h"
 
-#define STORELISTURL @"http://localhost:3001/storeList"
-#define STORESKUURL @"http://localhost:3001/skuList?store="
+#define STORELISTURL @"http://velocitylinux:3001/storeList"
+#define STORESKUURL @"http://velocitylinux:3001/skuList?store="
 
 @interface SIHomeViewController ()
 {
@@ -114,7 +114,8 @@
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
                                if(error)
                                {
-                                   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Unable to connect to store inventory service." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                   NSString *errorMessage = [NSString stringWithFormat:@"Unable to connect to store inventory service. More Error Information: %@", error];
+                                   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMessage delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                                    [alert show];
                                    
                                }
