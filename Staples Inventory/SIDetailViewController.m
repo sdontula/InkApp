@@ -8,6 +8,8 @@
 
 #import "SIDetailViewController.h"
 #import "SIImageFetcher.h"
+#import "urlConstants.h"
+
 
 @interface SIDetailViewController (){
     SIImageFetcher *imgFetcher;
@@ -41,6 +43,33 @@
 //    }
 }
 
+- (IBAction)reStock:(id)sender {
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    spinner.center = CGPointMake(160, 240);
+    spinner.hidesWhenStopped = YES;
+    [self.view addSubview:spinner];
+    [spinner startAnimating];
+    
+    NSString *urlString = [RESTOCKURL stringByReplacingOccurrencesOfString:@"$store$" withString:currentSku.store];
+    urlString = [urlString stringByReplacingOccurrencesOfString:@"$sku$" withString:currentSku.sku];
+    
+    NSURLRequest *request =[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue]completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+           if(error){
+               NSString *errorMessage = [NSString stringWithFormat:@"Unable to connect to store inventory service. More Error Information: %@", error];
+               UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:errorMessage delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+               [alert show];               
+           }
+           else if(data!=nil){
+               [spinner stopAnimating];
+               NSString *alertMessage = [NSString stringWithFormat:@"Sku %@ at store %@ is restocked sucessfully. Refresh table to see updated data.", currentSku.sku,currentSku.store];
+               UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success" message:alertMessage delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+               [alert show];
+           }
+    }];
+}
+
+
 - (void)getSku:(id)skuObject{
     currentSku = skuObject;
 }
@@ -67,7 +96,7 @@
     bool flag = [currentNum intValue] < [capacityNum intValue];
     bool belowThresholdFlag = [onShelfNum intValue] < [thresholdNum intValue];
     if(flag){
-        skuOnShelfLabel.backgroundColor = [UIColor redColor];
+        skuCurrentLevel.backgroundColor = [UIColor redColor];
     }else if(belowThresholdFlag){
         skuOnShelfLabel.backgroundColor = [UIColor yellowColor];
     }

@@ -12,6 +12,7 @@
 
 @property (strong) NSString *sku;
 @property (strong) NSString *description;
+@property (strong) NSString *store;
 @property (strong) NSString *capacity;
 @property (strong) NSString *threshold;
 @property (strong) NSString *onShelf;
@@ -19,6 +20,6 @@
 @property (strong) NSString *restockLevel;
 @property (strong) NSString *imagePath;
 
-- (id)initWithDesc:(NSString*)sku description:(NSString*)description capacity:(NSString*)capacity threshold:(NSString*)threshold onShelf:(NSString*)onShelf currentLevel:(NSString*)currentLevel restockLevel:(NSString*)restockLevel imagePath:(NSString*)imagePath;
+- (id)initWithDesc:(NSString*)sku description:(NSString*)description store:(NSString*)store capacity:(NSString*)capacity threshold:(NSString*)threshold onShelf:(NSString*)onShelf currentLevel:(NSString*)currentLevel restockLevel:(NSString*)restockLevel imagePath:(NSString*)imagePath;
 
 @end

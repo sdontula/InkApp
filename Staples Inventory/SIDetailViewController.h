@@ -25,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *skuImageView;
 @property (weak, nonatomic) SISkuData *currentSku;
 
+- (IBAction)reStock:(id)sender;
+
 - (void)getSku:(id)skuObject;
 - (void)setLabels;
 - (void)setDetailItem:(id)newDetailItem;

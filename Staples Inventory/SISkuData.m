@@ -12,6 +12,7 @@
 
 @synthesize sku = _sku;
 @synthesize description = _description;
+@synthesize store = _store;
 @synthesize capacity = _capacity;
 @synthesize threshold = _threshold;
 @synthesize onShelf = _onShelf;
@@ -19,10 +20,11 @@
 @synthesize restockLevel = _restockLevel;
 @synthesize imagePath = _imagePath;
 
-- (id)initWithDesc:(NSString*)sku description:(NSString*)description capacity:(NSString*)capacity threshold:(NSString*)threshold onShelf:(NSString*)onShelf currentLevel:(NSString*)currentLevel restockLevel:(NSString*)restockLevel imagePath:(NSString*)imagePath{
+- (id)initWithDesc:(NSString*)sku description:(NSString*)description store:(NSString*)store capacity:(NSString*)capacity threshold:(NSString*)threshold onShelf:(NSString*)onShelf currentLevel:(NSString*)currentLevel restockLevel:(NSString*)restockLevel imagePath:(NSString*)imagePath{
     if ((self = [super init])) {
         self.sku = sku;
         self.description = description;
+        self.store = store;
         self.imagePath = imagePath;
         self.capacity = capacity;
         self.currentLevel = currentLevel;

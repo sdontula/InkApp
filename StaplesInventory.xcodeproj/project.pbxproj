@@ -83,6 +83,7 @@
 		952C1AD5192AE93600964586 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "Staples Inventory/Main.storyboard"; sourceTree = "<group>"; };
 		952C1AD8192AE93600964586 /* SIHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SIHomeViewController.h; sourceTree = "<group>"; };
 		952C1AD9192AE93600964586 /* SIHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SIHomeViewController.m; sourceTree = "<group>"; };
+		954A22231936D27E00FF9E3A /* urlConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = urlConstants.h; sourceTree = "<group>"; };
 		9557169818DD5B2C00FE61B1 /* splash35@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "splash35@2x.jpg"; sourceTree = "<group>"; };
 		9557169918DD5B2C00FE61B1 /* splash40@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "splash40@2x.jpg"; sourceTree = "<group>"; };
 		955F3141192EE98200DD0D71 /* libPods-XtifyLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-XtifyLib.a"; path = "Pods/build/Debug-iphoneos/libPods-XtifyLib.a"; sourceTree = "<group>"; };
@@ -415,6 +416,7 @@
 			children = (
 				95A0F69818DCB14400DEB0C7 /* SISkuData.h */,
 				95A0F69918DCB14400DEB0C7 /* SISkuData.m */,
+				954A22231936D27E00FF9E3A /* urlConstants.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
