@@ -9,8 +9,8 @@
 #ifndef StaplesInventory_urlConstants_h
 #define StaplesInventory_urlConstants_h
 
-#define STORELISTURL @"http://velocitylinux:3001/storeList"
-#define STORESKUURL @"http://velocitylinux:3001/skuList?store="
-#define RESTOCKURL @"http://velocitylinux:3001/restockStore?store=$store$&sku=$sku$"
+#define STORELISTURL @"http://23.253.23.76/service/storeList"
+#define STORESKUURL @"http://23.253.23.76/service/skuList?store="
+#define RESTOCKURL @"http://23.253.23.76/service/restockStore?store=$store$&sku=$sku$"
 
 #endif
