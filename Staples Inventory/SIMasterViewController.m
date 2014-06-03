@@ -80,7 +80,7 @@ static bool showAlert = false;
         NSString *restockLevel = [NSString stringWithFormat:@"%@", [[_objects objectAtIndex:i]objectForKey:@"restockLevel"]];
         NSString *threshold = [NSString stringWithFormat:@"%@", [[_objects objectAtIndex:i]objectForKey:@"threshold"]];
         NSString *onShelf = [NSString stringWithFormat:@"%@", [[_objects objectAtIndex:i]objectForKey:@"onShelf"]];
-        NSString *currentLevel = [[[_objects objectAtIndex:i] objectForKey:@"currentLevel"] stringValue];
+        NSString *currentLevel = [NSString stringWithFormat:@"%@", [[_objects objectAtIndex:i]objectForKey:@"currentLevel"]];
         NSString *imagePath = [[_objects objectAtIndex:i] objectForKey:@"imageUrl"];
         //NSLog(@"%@",imagePath);
         //NSString *imagePath = @"";
