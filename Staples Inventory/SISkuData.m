@@ -19,8 +19,10 @@
 @synthesize currentLevel = _currentLevel;
 @synthesize restockLevel = _restockLevel;
 @synthesize imagePath = _imagePath;
+@synthesize status = _status;
+@synthesize alertStatus = _alertStatus;
 
-- (id)initWithDesc:(NSString*)sku description:(NSString*)description store:(NSString*)store capacity:(NSString*)capacity threshold:(NSString*)threshold onShelf:(NSString*)onShelf currentLevel:(NSString*)currentLevel restockLevel:(NSString*)restockLevel imagePath:(NSString*)imagePath{
+- (id)initWithDesc:(NSString*)sku description:(NSString*)description store:(NSString*)store capacity:(NSString*)capacity threshold:(NSString*)threshold onShelf:(NSString*)onShelf currentLevel:(NSString*)currentLevel restockLevel:(NSString*)restockLevel imagePath:(NSString*)imagePath status:(NSString*)status alertStatus:(NSString*)alertStatus{
     if ((self = [super init])) {
         self.sku = sku;
         self.description = description;
@@ -31,6 +33,8 @@
         self.restockLevel = restockLevel;
         self.threshold = threshold;
         self.onShelf = onShelf;
+        self.status = status;
+        self.alertStatus = alertStatus;
     }
     return self;
 }

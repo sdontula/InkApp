@@ -86,15 +86,24 @@
     
     skuImageView.image = [imgFetcher fetchImage:currentSku.imagePath];
     
-    NSNumber  *currentNum = [NSNumber numberWithInteger: [currentSku.currentLevel integerValue]];
-    NSNumber  *capacityNum = [NSNumber numberWithInteger: [currentSku.capacity integerValue]];
+    //NSNumber  *currentNum = [NSNumber numberWithInteger: [currentSku.currentLevel integerValue]];
+    //NSNumber  *capacityNum = [NSNumber numberWithInteger: [currentSku.capacity integerValue]];
     
-    NSNumber  *thresholdNum = [NSNumber numberWithInteger: [currentSku.threshold integerValue]];
-    NSNumber  *onShelfNum = [NSNumber numberWithInteger: [currentSku.onShelf integerValue]];
+    //NSNumber  *thresholdNum = [NSNumber numberWithInteger: [currentSku.threshold integerValue]];
+    //NSNumber  *onShelfNum = [NSNumber numberWithInteger: [currentSku.onShelf integerValue]];
     
     //if(indexPath.row == 2){
-    bool flag = [currentNum intValue] < [capacityNum intValue];
-    bool belowThresholdFlag = [onShelfNum intValue] < [thresholdNum intValue];
+    //bool flag = [currentNum intValue] < [capacityNum intValue];
+    //bool belowThresholdFlag = [onShelfNum intValue] < [thresholdNum intValue];
+    bool flag = false;
+    bool belowThresholdFlag = false;
+    if( [currentSku.status caseInsensitiveCompare:@"low"] == NSOrderedSame ) {
+        flag = true;
+    }
+    if( [currentSku.alertStatus caseInsensitiveCompare:@"reStock"] == NSOrderedSame ) {
+        belowThresholdFlag = true;
+    }
+    
     if(flag){
         skuCurrentLevel.backgroundColor = [UIColor redColor];
     }else if(belowThresholdFlag){
