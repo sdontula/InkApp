@@ -189,8 +189,8 @@ static bool showAlert = false;
     //NSNumber  *currentNum = [NSNumber numberWithInteger: [skuData.currentLevel integerValue]];
     //NSNumber  *capacityNum = [NSNumber numberWithInteger: [skuData.capacity integerValue]];
     
-    //NSNumber  *thresholdNum = [NSNumber numberWithInteger: [skuData.threshold integerValue]];
-    //NSNumber  *onShelfNum = [NSNumber numberWithInteger: [skuData.onShelf integerValue]];
+    NSNumber  *thresholdNum = [NSNumber numberWithInteger: [skuData.threshold integerValue]];
+    NSNumber  *onShelfNum = [NSNumber numberWithInteger: [skuData.onShelf integerValue]];
     
     //bool flag = [currentNum intValue] < [capacityNum intValue];
     //bool belowThresholdFlag = [onShelfNum intValue] < [thresholdNum intValue];
@@ -200,6 +200,8 @@ static bool showAlert = false;
         flag = true;
     }
     if( [skuData.alertStatus caseInsensitiveCompare:@"reStock"] == NSOrderedSame ) {
+        belowThresholdFlag = true;
+    }else if([skuData.status isEqualToString:@"high"] && [onShelfNum intValue] < [thresholdNum intValue]){
         belowThresholdFlag = true;
     }
     if(flag){
