@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *skuOnShelfLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *skuImageView;
 @property (weak, nonatomic) SISkuData *currentSku;
+@property (weak, nonatomic) IBOutlet UIButton *restockButton;
 
 - (IBAction)reStock:(id)sender;
 

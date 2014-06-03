@@ -269,7 +269,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaY-Ai-HmX">
-                                <rect key="frame" x="98" y="14" width="80" height="44"/>
+                                <rect key="frame" x="232" y="65" width="80" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Restock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -284,6 +284,7 @@
                     <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="HE9-f2-8ZU" id="LGD-zx-fOd"/>
+                        <outlet property="restockButton" destination="OaY-Ai-HmX" id="tSh-XZ-Y7T"/>
                         <outlet property="skuCapacityLabel" destination="cNJ-G2-Th2" id="vBi-YB-Uxd"/>
                         <outlet property="skuCurrentLevel" destination="X89-er-S21" id="5Y9-gV-zhd"/>
                         <outlet property="skuDetailLabel" destination="HE9-f2-8ZU" id="SDm-gv-8af"/>

@@ -20,7 +20,7 @@
 
 @implementation SIDetailViewController
 
-@synthesize skuIdLabel, skuDetailLabel, skuCapacityLabel, skuThresholdLabel, skuOnShelfLabel, skuCurrentLevel, skuRestockLevel, skuImageView, currentSku;
+@synthesize skuIdLabel, skuDetailLabel, skuCapacityLabel, skuThresholdLabel, skuOnShelfLabel, skuCurrentLevel, skuRestockLevel, skuImageView, currentSku, restockButton;
 
 #pragma mark - Managing the detail item
 
@@ -102,6 +102,8 @@
     }
     if( [currentSku.alertStatus caseInsensitiveCompare:@"reStock"] == NSOrderedSame ) {
         belowThresholdFlag = true;
+        restockButton.userInteractionEnabled = YES;
+        restockButton.hidden = NO;
     }
     
     if(flag){
@@ -118,6 +120,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
     self.title = @"Sku Description";
+    restockButton.userInteractionEnabled = NO;
+    restockButton.hidden = YES;
     [self setLabels];
 }
 
