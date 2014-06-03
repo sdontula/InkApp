@@ -25,6 +25,7 @@
 - (IBAction)refreshStoreList:(id)sender;
 - (IBAction)highProfileSKUList:(id)sender;
 - (IBAction)lowProfileSKUList:(id)sender;
+- (IBAction)restockSKUList:(id)sender;
 
 @end
 
@@ -48,6 +49,7 @@
     skuURL = nil;
   
     // Do any additional setup after loading the view.
+    [restockSkuButton setHidden:YES];
     [highSkuButton setHidden:YES];
     [lowSkuButton setHidden:YES];
     [self getStoreList];
@@ -157,19 +159,19 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    
-    
+    if([segue.identifier isEqualToString:@"restock"]){
+      skuURL = [NSString stringWithFormat:@"%@%@&status=high&restockOnly=true",STORESKUURL,[storeNumber objectAtIndex:selectedRow]];
+    }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if([sender tag] == 1 )
-    {
-    [[segue destinationViewController] setDataURL:skuURL];
-    }
-    
-    else{
-    [[segue destinationViewController] setDataURL:skuURL];
-    
-    }
+    //if([sender tag] == 1 )
+    //{
+        [[segue destinationViewController] setDataURL:skuURL];
+    //}else if([sender tag] == 2){
+     //   [[segue destinationViewController] setDataURL:skuURL];
+    //}else{
+    //    [[segue destinationViewController] setDataURL:skuURL];
+    //}
     NSLog(@"skuURL=%@",skuURL);
 }
 
@@ -221,6 +223,7 @@
     
     if(row == 0)
     {
+        [restockSkuButton setHidden:YES];
         [highSkuButton setHidden:YES];
         [lowSkuButton setHidden:YES];
     }
@@ -228,8 +231,11 @@
     {
         
         selectedRow =row;
+        [restockSkuButton setHidden:NO];
         [highSkuButton setHidden:NO];
-        [lowSkuButton setHidden:NO];
+        if(POWERUSER){
+            [lowSkuButton setHidden:NO];
+        }
         
         //Tag the xid with store number tag.
         NSMutableArray *tagsArray = [[NSMutableArray alloc] init];
@@ -241,9 +247,13 @@
 {
     skuURL = [NSString stringWithFormat:@"%@%@&status=low",STORESKUURL,[storeNumber objectAtIndex:selectedRow]];
 }
+
 - (IBAction)highProfileSKUList:(id)sender
 {
     skuURL = [NSString stringWithFormat:@"%@%@&status=high",STORESKUURL,[storeNumber objectAtIndex:selectedRow]];
 }
 
+- (IBAction)restockSKUList:(id)sender
+{
+}
 @end

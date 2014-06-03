@@ -20,7 +20,7 @@
 
 @implementation SIDetailViewController
 
-@synthesize skuIdLabel, skuDetailLabel, skuCapacityLabel, skuThresholdLabel, skuOnShelfLabel, skuCurrentLevel, skuRestockLevel, skuImageView, currentSku, restockButton;
+@synthesize skuIdLabel, skuDetailLabel, skuCapacityLabel, skuThresholdLabel, skuOnShelfLabel, skuCurrentLevel, skuRestockStaticTextLabel, skuRestockLevel, skuImageView, currentSku, restockButton;
 
 #pragma mark - Managing the detail item
 
@@ -82,6 +82,11 @@
     skuOnShelfLabel.text = currentSku.onShelf;
     skuCurrentLevel.text = currentSku.currentLevel;
     skuRestockLevel.text = currentSku.restockLevel;
+    
+    if(!POWERUSER) {
+        [skuRestockLevel setHidden:YES];
+        [skuRestockStaticTextLabel setHidden:YES];
+    }
     
     
     skuImageView.image = [imgFetcher fetchImage:currentSku.imagePath];

@@ -196,10 +196,10 @@ static bool showAlert = false;
     //bool belowThresholdFlag = [onShelfNum intValue] < [thresholdNum intValue];
     bool flag = false;
     bool belowThresholdFlag = false;
-    if( [skuData.status caseInsensitiveCompare:@"low"] == NSOrderedSame ) {
+    if( [skuData.status isEqualToString:@"low"]) {
         flag = true;
     }
-    if( [skuData.alertStatus caseInsensitiveCompare:@"reStock"] == NSOrderedSame ) {
+    if( [skuData.alertStatus isEqualToString:@"reStock"]) {
         belowThresholdFlag = true;
     }else if([skuData.status isEqualToString:@"high"] && [onShelfNum intValue] < [thresholdNum intValue]){
         belowThresholdFlag = true;

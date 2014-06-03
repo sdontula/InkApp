@@ -13,4 +13,6 @@
 #define STORESKUURL @"http://23.253.23.76/service/skuList?store="
 #define RESTOCKURL @"http://23.253.23.76/service/restockStore?store=$store$&sku=$sku$"
 
+#define POWERUSER NO
+
 #endif

@@ -32,49 +32,22 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3GY-PV-2rZ">
-                                <rect key="frame" x="63" y="237" width="171" height="30"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3GY-PV-2rZ">
+                                <rect key="frame" x="63" y="276" width="171" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="High ">
-                                            <attributes>
-                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content="Inventory">
-                                            <attributes>
-                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                        <fragment content=" SKUs">
-                                            <attributes>
-                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                                <state key="normal" title="High Inventory SKUs"/>
                                 <connections>
                                     <action selector="highProfileSKUList:" destination="L7C-gc-hkd" eventType="touchUpInside" id="kLs-l3-dq7"/>
-                                    <segue destination="pGg-6v-bdr" kind="push" id="bt0-Mm-C76"/>
+                                    <segue destination="pGg-6v-bdr" kind="push" identifier="high" id="bt0-Mm-C76"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJN-Tj-LCG">
-                                <rect key="frame" x="63" y="295" width="171" height="30"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJN-Tj-LCG">
+                                <rect key="frame" x="63" y="313" width="171" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Low Inventory SKUs">
-                                            <attributes>
-                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
+                                <state key="normal" title="Low Inventory SKUs"/>
                                 <connections>
                                     <action selector="lowProfileSKUList:" destination="L7C-gc-hkd" eventType="touchUpInside" id="XjV-it-sDI"/>
-                                    <segue destination="pGg-6v-bdr" kind="push" id="lGl-Q4-zei"/>
+                                    <segue destination="pGg-6v-bdr" kind="push" identifier="low" id="lGl-Q4-zei"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSu-8F-TAd">
@@ -85,6 +58,17 @@
                                     <outlet property="delegate" destination="L7C-gc-hkd" id="AgW-lx-tuv"/>
                                 </connections>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeg-fY-k29">
+                                <rect key="frame" x="63" y="236" width="171" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sku's to Restock">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restockSKUList:" destination="L7C-gc-hkd" eventType="touchUpInside" id="59P-q7-w86"/>
+                                    <segue destination="pGg-6v-bdr" kind="push" identifier="restock" id="WQK-ar-NtJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -98,6 +82,7 @@
                     <connections>
                         <outlet property="highSkuButton" destination="3GY-PV-2rZ" id="nxP-8u-015"/>
                         <outlet property="lowSkuButton" destination="CJN-Tj-LCG" id="du3-H4-ZBb"/>
+                        <outlet property="restockSkuButton" destination="yeg-fY-k29" id="fjF-UO-ljX"/>
                         <outlet property="storeList" destination="LSu-8F-TAd" id="7ss-Ls-Aof"/>
                     </connections>
                 </viewController>
@@ -292,6 +277,7 @@
                         <outlet property="skuImageView" destination="xwW-k6-8sd" id="4ed-KW-GjC"/>
                         <outlet property="skuOnShelfLabel" destination="LRk-Zi-kSU" id="eGj-KR-uwL"/>
                         <outlet property="skuRestockLevel" destination="Xu2-G5-VWb" id="lvd-Ol-E19"/>
+                        <outlet property="skuRestockStaticTextLabel" destination="rLO-X3-pER" id="ftz-bK-uEV"/>
                         <outlet property="skuThresholdLabel" destination="ohX-3u-7Yp" id="clb-Q9-EhX"/>
                     </connections>
                 </viewController>
@@ -306,6 +292,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="lGl-Q4-zei"/>
+        <segue reference="WQK-ar-NtJ"/>
     </inferredMetricsTieBreakers>
 </document>

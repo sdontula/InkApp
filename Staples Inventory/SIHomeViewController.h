@@ -10,7 +10,9 @@
 
 @interface SIHomeViewController : UIViewController
 {
-    IBOutlet UIButton * highSkuButton,*lowSkuButton;
+    IBOutlet UIButton *highSkuButton;
+    IBOutlet UIButton *lowSkuButton;
+    IBOutlet UIButton *restockSkuButton;
     IBOutlet UIPickerView *storeList;
 }
 
