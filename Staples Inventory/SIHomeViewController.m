@@ -250,7 +250,7 @@
 
 - (IBAction)highProfileSKUList:(id)sender
 {
-    skuURL = [NSString stringWithFormat:@"%@%@&status=high",STORESKUURL,[storeNumber objectAtIndex:selectedRow]];
+    skuURL = [NSString stringWithFormat:@"%@%@&",STORESKUURL,[storeNumber objectAtIndex:selectedRow]];
 }
 
 - (IBAction)restockSKUList:(id)sender
