@@ -160,7 +160,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"restock"]){
-      skuURL = [NSString stringWithFormat:@"%@%@&status=high&restockOnly=true",STORESKUURL,[storeNumber objectAtIndex:selectedRow]];
+      skuURL = [NSString stringWithFormat:@"%@%@&restockOnly=true",STORESKUURL,[storeNumber objectAtIndex:selectedRow]];
     }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
@@ -220,7 +220,7 @@
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    
+    NSMutableArray *tagsArray = [[NSMutableArray alloc] init];
     if(row == 0)
     {
         [restockSkuButton setHidden:YES];
@@ -238,10 +238,9 @@
         }
         
         //Tag the xid with store number tag.
-        NSMutableArray *tagsArray = [[NSMutableArray alloc] init];
         [tagsArray addObject:[storeNumber objectAtIndex:row]];
-        [[XLappMgr get] setTag:tagsArray];
     }
+    [[XLappMgr get] setTag:tagsArray];
 }
 - (IBAction)lowProfileSKUList:(id)sender
 {
@@ -255,5 +254,8 @@
 
 - (IBAction)restockSKUList:(id)sender
 {
+    //Don't freak out.
+    //skuURL population for restocked skus is being done in prepareForSegue method. Go up there.
+    //(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 }
 @end
