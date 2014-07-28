@@ -103,6 +103,7 @@
 
 - (void)handleAnyNotification:(NSDictionary *)aPush
 {
+    [[XLappMgr get] setBadgeCountSpringBoardAndServer:0];
     // Update Notification Click metrics
     [[XLappMgr get]insertNotificationClick:aPush];
 }

@@ -112,9 +112,9 @@
     }
     
     if(flag){
-        skuCurrentLevel.backgroundColor = [UIColor redColor];
+        skuCurrentLevel.backgroundColor = [UIColor yellowColor];
     }else if(belowThresholdFlag){
-        skuOnShelfLabel.backgroundColor = [UIColor yellowColor];
+        skuOnShelfLabel.backgroundColor = [UIColor redColor];
         restockButton.userInteractionEnabled = YES;
         restockButton.hidden = NO;
     }
