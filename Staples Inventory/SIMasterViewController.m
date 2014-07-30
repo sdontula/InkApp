@@ -205,10 +205,9 @@ static bool showAlert = false;
         belowThresholdFlag = true;
     }
     if(flag){
-        //cell.backgroundColor = [UIColor redColor];
-        cell.contentView.backgroundColor = [UIColor yellowColor];
-    }else if(belowThresholdFlag){
         cell.contentView.backgroundColor = [UIColor redColor];
+    }else if(belowThresholdFlag){
+        cell.contentView.backgroundColor = [UIColor yellowColor];
         showAlert = true;
     }else{
         cell.contentView.backgroundColor = [UIColor whiteColor];
